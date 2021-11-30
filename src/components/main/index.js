@@ -2,14 +2,14 @@ import React , {Fragment} from 'react';
 import auto from '../../img/auto.png';
 
 const Banner = () => {
-    return (  
-            <div class="banner">
+    return (
+            <div className="banner">
                 <img src={auto} alt=""/>
-                <h1 class="banner__slogan">Encuentra el auto de tus sueños</h1>
+                <h1 className="banner__slogan">Encuentra el auto de tus sueños</h1>
             </div>
     );
 }
- 
+
 const Formulario = () => {
     return (
         <Fragment>
@@ -19,7 +19,7 @@ const Formulario = () => {
                 <button>Nuevos</button>
                 <button>Usados</button>
             </div>
-            
+
             <form action="#" className="form1__filtro">
                 <div className="form1__buscar">
                     <input type="text" placeholder="Buscar auto" className="form1__buscar__frm-buscar"/>
@@ -32,18 +32,18 @@ const Formulario = () => {
                 </div>
 
                 <div className="form1__periodo">
-                    <label for="anio">Año</label>
+                    <label htmlFor="anio">Año</label>
                     <input className="form1__periodo__num" type="number" placeholder="Desde"/>
                     <input className="form1__periodo__num" type="number" placeholder="Hasta"/>
-                        
-                    <label for="precio" className="form1__periodo__espacio">Rango de precio S/.</label>
+
+                    <label htmlFor="precio" className="form1__periodo__espacio">Rango de precio S/.</label>
                     <input type="range"/>
 
                     <button>BUSCAR</button>
                 </div>
-                
+
             </form>
-            
+
         </div>
         </Fragment>
       );
@@ -52,12 +52,12 @@ const Formulario = () => {
 
 
 const Home = () => {
-    return ( 
+    return (
             <main>
                 <Banner />
                 <Formulario />
             </main>
      );
 }
- 
+
 export default Home;
