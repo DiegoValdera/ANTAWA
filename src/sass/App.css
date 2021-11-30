@@ -62,6 +62,24 @@ header .i .user:hover {
   padding: 10px;
 }
 
+.header__li ul {
+  background-color: #264653;
+  display: none;
+  position: absolute;
+  top: 60px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 0px 0px 7px 7px;
+}
+
+.header__li ul:hover {
+  display: block;
+}
+
+.header__li ul li {
+  padding: 10px;
+}
+
 /*Responsive para pantalla moviles*/
 @media (min-width: 200px) and (max-width: 720px) {
   .header__ul {
@@ -363,6 +381,49 @@ table {
     margin-left: 150px;
     margin-right: 150px;
   }
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.filtro {
+  background-color: #264653;
+  height: 650px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+.filtro__lateral {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.container__card {
+  display: -ms-grid;
+  display: grid;
+  background-color: #264653;
+  color: #fff;
+  height: 450px;
 }
 
 main {

@@ -19,6 +19,7 @@ header ul .a_active{
     color: #264653;
 }
 
+
 header .i .user{
     font-size: 24px;
     color: #fff;
@@ -32,8 +33,6 @@ header .i .user:hover{
     cursor: pointer;
     background-color:#E9C46A ;
 }
-
-
 
 .header{
     height: 40px;
@@ -49,6 +48,25 @@ header .i .user:hover{
         margin-right: 10px;
     }
     &__li{
+        padding: 10px;
+    }
+
+    &__li ul{
+        background-color:#264653;
+        display: none;
+        position: absolute;
+        top: 60px;
+        height: 80px;
+        padding: 10px;
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    &__li ul:hover{
+        display: block;
+    }
+
+
+    &__li ul li{
         padding: 10px;
     }
 }

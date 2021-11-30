@@ -1,0 +1,37 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.filtro{
+    background-color: #264653;
+    height: 650px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+
+    &__lateral{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    
+    &__card{
+        display: grid;
+        background-color: #264653;
+        color: #fff;
+        height: 450px;
+    }
+
+
+}
+
+
