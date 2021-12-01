@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ANTAWA/static/css/main.5c857ac0.chunk.css",
+    "main.js": "/ANTAWA/static/js/main.5adff204.chunk.js",
+    "main.js.map": "/ANTAWA/static/js/main.5adff204.chunk.js.map",
+    "runtime-main.js": "/ANTAWA/static/js/runtime-main.406033b9.js",
+    "runtime-main.js.map": "/ANTAWA/static/js/runtime-main.406033b9.js.map",
+    "static/js/2.473246c5.chunk.js": "/ANTAWA/static/js/2.473246c5.chunk.js",
+    "static/js/2.473246c5.chunk.js.map": "/ANTAWA/static/js/2.473246c5.chunk.js.map",
+    "index.html": "/ANTAWA/index.html",
+    "static/css/main.5c857ac0.chunk.css.map": "/ANTAWA/static/css/main.5c857ac0.chunk.css.map",
+    "static/js/2.473246c5.chunk.js.LICENSE.txt": "/ANTAWA/static/js/2.473246c5.chunk.js.LICENSE.txt",
+    "static/media/auto.dc49e16e.png": "/ANTAWA/static/media/auto.dc49e16e.png",
+    "static/media/card.64a74fcf.png": "/ANTAWA/static/media/card.64a74fcf.png",
+    "static/media/logo.6d8fc0c4.svg": "/ANTAWA/static/media/logo.6d8fc0c4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.406033b9.js",
+    "static/js/2.473246c5.chunk.js",
+    "static/css/main.5c857ac0.chunk.css",
+    "static/js/main.5adff204.chunk.js"
+  ]
+}
