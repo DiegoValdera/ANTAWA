@@ -1,4 +1,5 @@
 import React , {Fragment} from 'react';
+import { NavLink as Link } from 'react-router-dom';
 import auto from '../../img/auto.png';
 
 
@@ -39,7 +40,9 @@ const Formulario = () => {
                         
                     <label for="rango" className="form1__periodo__espacio">Rango de precio S/.</label>
                     <input type="range" name="rango" id="rango" min="10000" max="500000" step="5000" />
-                    <button>BUSCAR</button>
+                    <Link exact to="/buscar-auto">
+                        <button>BUSCAR</button>
+                    </Link>
 
                 </div>
                 
