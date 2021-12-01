@@ -25,7 +25,7 @@ const Formulario = () => {
                 <div className="form1__buscar">
                     <input type="text" placeholder="Buscar auto" className="form1__buscar__frm-buscar"/>
                     <select name="marca" id="marca">
-                        <option value="">Escoge tu marca</option>
+                        <option value="0">Escoge tu marca</option>
                     </select>
                     <select name="modelo" id="modelo">
                         <option value="0">Escoge tu modelo</option>

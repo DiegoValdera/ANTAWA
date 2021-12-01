@@ -1,7 +1,3 @@
-body {
-  font-family: 'Raleway';
-}
-
 header ul a {
   color: #fff;
   text-decoration: none;
@@ -383,47 +379,213 @@ table {
   }
 }
 
-main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+.main_buscar_auto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+  padding: 30px;
+  height: 79.5vh;
+  background: linear-gradient(63.29deg, rgba(38, 70, 83, 0.37) 0%, rgba(233, 196, 106, 0.6) 100.34%, rgba(255, 255, 255, 0) 100.35%);
 }
 
+/*campo lateral para la busqueda de autos*/
 .filtro {
   background-color: #264653;
-  height: 650px;
-  width: 200px;
+  height: 500px;
+  width: 250px;
   border-radius: 10px;
   padding: 20px;
-  color: #fff;
+  color: #dad6d6;
 }
 
-.filtro__lateral {
+.filtro__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.filtro__titulo__selects {
+  padding: 5px;
+  color: #ecd659;
+  background-color: #264653;
+  border-radius: 7px;
+}
+
+.filtro__titulo__selects option {
+  padding: 10px;
+}
+
+.filtro__titulo__inputs {
+  width: 50px;
+  border-radius: 7px;
+  padding: 5px;
+  border: 1px solid #ecd659;
+}
+
+/*Imagen para adaptar al div*/
+.container__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.container__img {
+  background-color: #264653;
+  border-radius: 10px 10px 0 0;
+}
+
+/*contenedor para los cards*/
+.container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-gap: 20px;
 }
 
 .container__card {
-  display: -ms-grid;
-  display: grid;
   background-color: #264653;
+  margin: 0;
+  padding: 15px;
   color: #fff;
-  height: 450px;
+  border-radius: 0 0 10px 10px;
+}
+
+.container__card__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 0px 10px 10px 0px;
+}
+
+.container__card__titulo__anio {
+  background-color: #fff;
+  color: #264653;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.container__card__titulo__marca {
+  font-size: 22px;
+}
+
+.container__card__tipo {
+  font-size: 12px;
+}
+
+.container__card__precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px 0 10px 0;
+}
+
+.container__card__precio__precio1 {
+  font-size: 15px;
+}
+
+.container__card__precio__precio2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e7cc31;
+}
+
+.container__card__kilometros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0 5px 0;
+}
+
+.container__card__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0 5px 0;
+}
+
+.container__card__descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0 5px 0;
+}
+
+/*responsive*/
+@media (min-width: 1051px) and (max-width: 1285px) {
+  .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 818px) and (max-width: 1050px) {
+  .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 590px) and (max-width: 817px) {
+  .container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 200px) and (max-width: 589px) {
+  .main_buscar_auto {
+    display: block;
+    height: 1000vh;
+  }
+  .filtro {
+    background-color: #264653;
+    height: 500px;
+    width: 85%;
+    padding: 20px;
+    margin: auto;
+  }
+  .container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+}
+
+body {
+  font-family: 'Raleway';
 }
 
 main {

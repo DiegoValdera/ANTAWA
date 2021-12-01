@@ -13,14 +13,14 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Switch>
 
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/buscar-auto" component={BcrAuto} />
           <Route exact path="/usados" component={Usados} />
           <Route exact path="/login" component={Login} />
-
         </Switch>
+        
       </Router>
     </div>
 
