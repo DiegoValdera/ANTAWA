@@ -7,7 +7,8 @@ import Home from './components/main/index';
 import Login from './pages/login/index';
 import Register from './pages/registerUser';
 import Usados from './pages/usados/index';
-
+import BcrAuto from './pages/buscar-auto/index';
+import ContactForm from './pages/usados/index'
 
 function App() {
   return (
@@ -17,9 +18,11 @@ function App() {
         <Switch>
 
           <Route exact path="/" component={Home} />
+          <Route exact path="/buscar-auto" component={BcrAuto} />
           <Route exact path="/usados" component={Usados} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/contactform" component={ContactForm} />
 
         </Switch>
       </Router>

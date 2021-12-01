@@ -83,6 +83,18 @@ header .i .user:hover {
     margin-right: 10px; }
   .header__li {
     padding: 10px; }
+  .header__li ul {
+    background-color: #264653;
+    display: none;
+    position: absolute;
+    top: 60px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 0px 0px 7px 7px; }
+  .header__li ul:hover {
+    display: block; }
+  .header__li ul li {
+    padding: 10px; }
 
 /*Responsive para pantalla moviles*/
 @media (min-width: 200px) and (max-width: 720px) {
@@ -313,6 +325,8 @@ header .i .user:hover {
     color: #264653; }
   .FormRegister input {
     font-size: 14px; }
+  .FormRegister p {
+    font-size: 10px; }
 
 .FormRegister__2row {
   display: flex;
@@ -338,6 +352,12 @@ header .i .user:hover {
   border-radius: 5px;
   border: 1px solid white;
   padding-left: 8px; }
+
+.FormRegister__divHigh {
+  height: 45px; }
+  .FormRegister__divHigh p {
+    position: absolute;
+    color: #fd592f; }
 
 .RightRegister {
   width: 50%;
@@ -375,6 +395,33 @@ header .i .user:hover {
 @media (max-width: 720px) {
   .Register__Wrapper {
     height: auto; } }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 20px; }
+
+.filtro {
+  background-color: #264653;
+  height: 650px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff; }
+  .filtro__lateral {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; }
+  .container__card {
+    display: grid;
+    background-color: #264653;
+    color: #fff;
+    height: 450px; }
 
 * {
   font-family: 'Roboto', sans-serif; }

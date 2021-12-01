@@ -1,6 +1,7 @@
 import React , {Fragment} from 'react';
 import auto from '../../img/auto.png';
 
+
 const Banner = () => {
     return (
             <div className="banner">
@@ -36,10 +37,10 @@ const Formulario = () => {
                     <input className="form1__periodo__num" type="number" placeholder="Desde"/>
                     <input className="form1__periodo__num" type="number" placeholder="Hasta"/>
 
-                    <label htmlFor="precio" className="form1__periodo__espacio">Rango de precio S/.</label>
-                    <input type="range"/>
-
+                    <label for="rango" className="form1__periodo__espacio">Rango de precio S/.</label>
+                    <input type="range" name="rango" id="rango" min="10000" max="500000" step="5000" />
                     <button>BUSCAR</button>
+
                 </div>
 
             </form>
