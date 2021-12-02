@@ -1,0 +1,13 @@
+1- clonar el repositorio:
+	git clone https://github.com/DiegoValdera/ANTAWA.git
+---------------------------------------------------------------
+2- instalar la aplicacion antawa en react
+	npx create-react-app antawa
+	cd antawa
+---------------------------------------------------------------
+3- instalar router-dom con la version 5.3.0
+	npm i react-router-dom@5.3.0
+---------------------------------------------------------------
+4- tener instalado el complemento Live Sass Compiler en code
+
+---------------------------------------------------------------

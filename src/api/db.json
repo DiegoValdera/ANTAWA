@@ -94,6 +94,61 @@
         "Sunny"
       ],
       "id": 3
+    },
+    {
+      "marca": "Hyundai",
+      "modelos": [
+        "Santa Fe",
+        "Elantra",
+        "Accent",
+        "Tucson",
+        "Creta",
+        "Sonata",
+        "H-1",
+        "I20",
+        "Atos",
+        "Avante",
+        "Excel",
+        "Galloper",
+        "Genesis",
+        "Getz",
+        "I10",
+        "I20",
+        "I30",
+        "Ioniq",
+        "Palisade",
+        "Tiburon",
+        "Veloster",
+        "Venue",
+        "Veracruz",
+        "Verna"
+      ],
+      "id": 4
+    },
+    {
+      "marca": "Volkswagen",
+      "modelos": [
+        "Jetta",
+        "Gol",
+        "Bora",
+        "Amarok",
+        "Crossfox",
+        "Tiguan",
+        "Passat",
+        "Amazon",
+        "Beetle",
+        "Escarabajo",
+        "Golf",
+        "Polo",
+        "T-Cross",
+        "Touareg",
+        "Transporter",
+        "Up",
+        "Vento",
+        "Virtus",
+        "Voyage"
+      ],
+      "id": 5
     }
   ],
   "categorias": [
@@ -148,24 +203,6 @@
       "dni": "08541263",
       "celular": "999456123",
       "id": 2
-    },
-    {
-      "nameInput": "Jordan",
-      "lastName": "Terrazos",
-      "email": "razos@hotmail.com",
-      "password": "1234",
-      "dni": "77641620",
-      "phone": "999999999",
-      "id": 3
-    },
-    {
-      "nameInput": "Marco",
-      "lastName": "Castillo",
-      "email": "castillo@gmail.com",
-      "password": "test",
-      "dni": "99999999",
-      "phone": "999600566",
-      "id": 4
     }
   ],
   "combustibles": [
@@ -200,6 +237,108 @@
       "id": 2
     }
   ],
+  "regiones": [
+    {
+      "region": "Amazonas",
+      "id": 1
+    },
+    {
+      "region": "Ancash",
+      "id": 2
+    },
+    {
+      "region": "Apurimac",
+      "id": 3
+    },
+    {
+      "region": "Arequipa",
+      "id": 4
+    },
+    {
+      "region": "Ayacucho",
+      "id": 5
+    },
+    {
+      "region": "Cajamarca",
+      "id": 6
+    },
+    {
+      "region": "Callao",
+      "id": 7
+    },
+    {
+      "region": "Cusco",
+      "id": 8
+    },
+    {
+      "region": "Huancavelica",
+      "id": 9
+    },
+    {
+      "region": "Huanuco",
+      "id": 10
+    },
+    {
+      "region": "Ica",
+      "id": 11
+    },
+    {
+      "region": "Junin",
+      "id": 12
+    },
+    {
+      "region": "La Libertad",
+      "id": 13
+    },
+    {
+      "region": "Lambayeque",
+      "id": 14
+    },
+    {
+      "region": "Lima",
+      "id": 15
+    },
+    {
+      "region": "Loreto",
+      "id": 16
+    },
+    {
+      "region": "Madre de Dios",
+      "id": 17
+    },
+    {
+      "region": "Moquegua",
+      "id": 18
+    },
+    {
+      "region": "Pasco",
+      "id": 19
+    },
+    {
+      "region": "Piura",
+      "id": 20
+    },
+    {
+      "region": "Puno",
+      "id": 21
+    },
+    {
+      "region": "San Martin",
+      "id": 22
+    },
+    {
+      "region": "Tacna",
+      "id": 23
+    },
+    {
+      "region": "Tumbes",
+      "id": 24
+    },
+    {
+      "region": "Ucayali",
+      "id": 25
+    }
+  ],
   "ofertas": [
     {
       "idVendedor": 2,
@@ -209,14 +348,18 @@
       "modelo": "Yaris",
       "idCategoria": 1,
       "categoria": "sedan",
+      "añomfabricacion": "2015",
       "añomodelo": "2016",
       "kilometraje": "20000",
       "idtransmision": 1,
       "transmision": "mecánica",
       "idCombustible": 3,
       "combustible": "dual-glp",
+      "cilindrada": "1300",
+      "numeropuertas": 4,
       "color": "rojo",
       "preciodolares": "10000",
+      "autonuevo": false,
       "photos": [
         "https://cdn.motor1.com/images/mgl/WVLZ6/s1/4x3/lanzamiento-toyota-yaris-2021.webp",
         "https://cde.neoauto.pe/autos_usados/196x164/650434/650434_4851468.jpg?20211126110224"
@@ -231,19 +374,50 @@
       "modelo": "Cerato",
       "idCategoria": 1,
       "categoria": "sedan",
+      "añomfabricacion": "2018",
       "añomodelo": "2019",
       "kilometraje": "15000",
       "idtransmision": 2,
       "transmision": "automatica",
       "idCombustible": 4,
       "combustible": "dual-gnv",
+      "cilindrada": "1600",
+      "numeropuertas": 4,
       "color": "azul",
       "preciodolares": "21000",
+      "autonuevo": false,
       "photos": [
         "https://cde.neoauto.pe/autos_usados/800x600/113873/113873_5224061.jpg?20211126110224",
         "https://cde.neoauto.pe/autos_usados/800x600/113873/113873_6546036.jpg?20211126110224"
       ],
-      "id": 1
+      "id": 2
+    },
+    {
+      "idVendedor": 1,
+      "descripcion": "Sedan amplio Toyota Corolla sedan 1.8cvt año 2019 modelo 2019, 50,739 km de recorrido, transmision automatica cvt",
+      "idMarca": 1,
+      "marca": "toyota",
+      "modelo": "Corolla",
+      "idCategoria": 1,
+      "categoria": "sedan",
+      "añomfabricacion": "2017",
+      "añomodelo": "2017",
+      "kilometraje": "50739",
+      "idtransmision": 2,
+      "transmision": "automatica",
+      "idCombustible": 1,
+      "combustible": "gasolina",
+      "cilindrada": "1800",
+      "numeropuertas": 4,
+      "color": "negro",
+      "preciodolares": "18000",
+      "autonuevo": false,
+      "photos": [
+        "https://cde.neoauto.pe/autos_usados/800x600/663163/663163_2246008.jpg?20211130002909",
+        "https://cde.neoauto.pe/autos_usados/196x164/663163/663163_7295871.jpg?20211130002909",
+    "https://cde.neoauto.pe/autos_usados/196x164/663163/663163_8169825.jpg?20211130002909"
+      ],
+      "id": 3
     }
   ]
 }

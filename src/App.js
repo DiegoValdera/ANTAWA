@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 import './sass/App.css';
 import Header from './components/header/index';
@@ -15,8 +16,8 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Switch>
 
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/buscar-auto" component={BcrAuto} />
           <Route exact path="/usados" component={Usados} />
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/contactform" component={ContactForm} />
 
         </Switch>
+
       </Router>
     </div>
 

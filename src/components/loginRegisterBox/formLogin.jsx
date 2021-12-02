@@ -1,36 +1,54 @@
 import { ButtonLogReg } from "./buttonLogReg";
 import { NavLink as Link } from 'react-router-dom';
 import axios from 'axios';
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+
 
 function FormLogin(){
+  const url = 'http://localhost:3000/vendedores/';
+  const initialFormValues = {email:"", password:""};
+  const [formValues, setFormValues] = useState(initialFormValues);
+  const history = useHistory();
 
-  let handleSubmit = (e) =>{
-    let url = 'http://localhost:3000/vendedores/'
-    let inputEmail = document.querySelector('.inputEmail').value;
-    let inputPassword = document.querySelector('.inputPassword').value;
+  const checkEmail = (serverUsers, formData) => {
+    const user = serverUsers.find(user => user.email === formData.email.value && user.contraseña === formData.password.value)
 
-    e.preventDefault();
-    console.log("Mensajeeeee")
-
-    axios.get(url).then(respuesta =>{
-      respuesta.data.map((vendedor)=>{
-        console.log(vendedor.email)
-      })
-    })
-
+    if (user){
+      alert("Ingeso correcto!");
+      setTimeout(()=>{
+        history.push('/');
+      }, 1000)
+    } else{
+      alert("Cuenta no existe");
+    }
   }
 
+  let handleChange = (e) =>{
+    const {name, value} = e.target;
+    setFormValues({...formValues, [name]:value});
+    console.log(formValues);
+  }
+
+  let handleSubmit = (e) =>{
+    e.preventDefault();
+    const checkUser =
+      axios
+        .get(url)
+        .then(
+          (respuesta) => checkEmail(respuesta.data, e.target));
+  }
 
   return(
     <div className="LoginBox__form">
       <form onSubmit={handleSubmit}>
         <div>
           <label>Email</label>
-          <input type="text" className="inputEmail" placeholder="Correo electrónico" required/>
+          <input name="email" type="text" className="inputEmail" placeholder="Correo electrónico" required value={formValues.email} onChange={handleChange}/>
         </div>
         <div>
           <label>Contraseña</label>
-          <input type="password" className="inputPassword" placeholder="Contraseña" required/>
+          <input name="password" type="password" className="inputPassword" placeholder="Contraseña" required value={formValues.password} onChange={handleChange}/>
         </div>
         <div>
         <ButtonLogReg TextoBtn="Ingresar"/>
