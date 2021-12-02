@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 
 
 function FormLogin(){
-  const url = 'http://localhost:3000/vendedores/';
+  const url = 'http://localhost:5000/vendedores/';
   const initialFormValues = {email:"", password:""};
   const [formValues, setFormValues] = useState(initialFormValues);
   const history = useHistory();

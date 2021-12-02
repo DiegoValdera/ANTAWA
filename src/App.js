@@ -14,6 +14,7 @@ import ContactForm from './pages/usados/index'
 function App() {
   return (
     <div className="App">
+      <Provider>
       <Router>
         <Header />
 
@@ -28,6 +29,7 @@ function App() {
         </Switch>
 
       </Router>
+      </Provider>
     </div>
 
   );

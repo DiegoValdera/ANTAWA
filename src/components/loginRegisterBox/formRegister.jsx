@@ -7,7 +7,7 @@ import { useHistory } from 'react-router-dom';
 
 function FormRegister(){
 
-  const url = 'http://localhost:3000/vendedores';
+  const url = 'http://localhost:5000/vendedores';
   const pageHome = '/';
   const initialValues = { nameInput:"", lastName:"", email:"", password:"", dni:"", phone:"" };
   const [formValues, setFormValues] = useState(initialValues);

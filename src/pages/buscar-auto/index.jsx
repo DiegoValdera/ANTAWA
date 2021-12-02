@@ -1,5 +1,35 @@
+import React from 'react'
+import Marcas from './apimarca';
+import Cards from './apicard';
 import card from '../../img/card.png';
 import 'boxicons';
+
+
+/*Mostrar las modelo en un select
+function Modelos() {
+    const [Modelo, setModelo] = useState([])
+    const urlM = 'http://localhost:5000/marcas'
+
+    const fetchApiModelo = () =>{
+        fetch(urlM)
+        .then(response => response.json())
+        .then(data => (console.log(data)))
+        .catch(error =>console.log(error))      
+    };
+    useEffect(()=>{fetchApiModelo(urlM)},[])
+
+return ( 
+    <select className="filtro__titulo__selects">
+            <option value="">--Seleccione--</option>
+        {Modelo.filtrer((itemM, index) =>(
+            <option key={index} value={itemM.id=2}>{itemM.modelos}</option>
+        ))}
+        
+    </select> 
+    );
+}
+*/
+
 
 const BcrAuto = () => {
  
@@ -10,22 +40,21 @@ const BcrAuto = () => {
                         <div>Ubicación</div>
                         <div>
                             <select className="filtro__titulo__selects">
-                                <option value="0">Arequipa</option>
+                                <option value="0">--Seleccione--</option>
+                                <option value="1">Lima</option>
                             </select>
                         </div>
                     </div>
                     <div className="filtro__titulo">
                         <div>Marca</div>
                         <div>
-                            <select className="filtro__titulo__selects">
-                            <option value="0">Toyota</option>
-                            </select> 
+                            <Marcas />
                         </div>
                     </div>
                     <div className="filtro__titulo">
                         <div>Modelo</div>
                         <div>
-                            <select className="filtro__titulo__selects">
+                            <select id="modelo" className="filtro__titulo__selects">
                                 <option value="0">Todos</option>
                             </select>
                         </div>
@@ -79,211 +108,7 @@ const BcrAuto = () => {
                 </div>
 
                 <div className="container">
-
-                    <div>
-                        <div className="container__img"><img src={card} /></div>
-
-                        <div className="container__card" >
-                            <div className="container__card__titulo">
-                                <div className="container__card__titulo__anio">2019</div> 
-                                <h3 className="container__card__titulo__marca">Toyota</h3>
-                            </div>
-
-                            <div className="container__card__tipo">Mecanico</div>
-
-                            <div className="container__card__precio">
-                                <div><box-icon type="solid" name='no-entry' color="white"></box-icon></div>
-                                <div className="container__card__precio__precio1">$ 1,200</div> |
-                                <h3 className="container__card__precio__precio2">$24,000</h3>
-                            </div>
-                            <hr />
-                            <div className="container__card__kilometros">
-                                <div><box-icon type="solid" name='ev-station' color="white"></box-icon></div>
-                                <div>32,000 Kilometros</div>
-                            </div>
-                            <div className="container__card__color">
-                                <div><box-icon name='color-fill' color="white"></box-icon></div>
-                                <div>Exterior negro</div>
-                            </div>
-                            <div className="container__card__descripcion">
-                                <div><box-icon name='taxi' color="white"></box-icon></div>
-                                <div>Sin accidentes, uso personal.</div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div className="container__img"><img src={card} /></div>
-
-                        <div className="container__card" >
-                            <div className="container__card__titulo">
-                                <div className="container__card__titulo__anio">2019</div> 
-                                <h3 className="container__card__titulo__marca">Toyota</h3>
-                            </div>
-
-                            <div className="container__card__tipo">Mecanico</div>
-
-                            <div className="container__card__precio">
-                                <div><box-icon type="solid" name='no-entry' color="white"></box-icon></div>
-                                <div className="container__card__precio__precio1">$ 1,200</div> |
-                                <h3 className="container__card__precio__precio2">$24,000</h3>
-                            </div>
-                            <hr />
-                            <div className="container__card__kilometros">
-                                <div><box-icon type="solid" name='ev-station' color="white"></box-icon></div>
-                                <div>32,000 Kilometros</div>
-                            </div>
-                            <div className="container__card__color">
-                                <div><box-icon name='color-fill' color="white"></box-icon></div>
-                                <div>Exterior negro</div>
-                            </div>
-                            <div className="container__card__descripcion">
-                                <div><box-icon name='taxi' color="white"></box-icon></div>
-                                <div>Sin accidentes, uso personal.</div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div className="container__img"><img src={card} /></div>
-
-                        <div className="container__card" >
-                            <div className="container__card__titulo">
-                                <div className="container__card__titulo__anio">2019</div> 
-                                <h3 className="container__card__titulo__marca">Toyota</h3>
-                            </div>
-
-                            <div className="container__card__tipo">Mecanico</div>
-
-                            <div className="container__card__precio">
-                                <div><box-icon type="solid" name='no-entry' color="white"></box-icon></div>
-                                <div className="container__card__precio__precio1">$ 1,200</div> |
-                                <h3 className="container__card__precio__precio2">$24,000</h3>
-                            </div>
-                            <hr />
-                            <div className="container__card__kilometros">
-                                <div><box-icon type="solid" name='ev-station' color="white"></box-icon></div>
-                                <div>32,000 Kilometros</div>
-                            </div>
-                            <div className="container__card__color">
-                                <div><box-icon name='color-fill' color="white"></box-icon></div>
-                                <div>Exterior negro</div>
-                            </div>
-                            <div className="container__card__descripcion">
-                                <div><box-icon name='taxi' color="white"></box-icon></div>
-                                <div>Sin accidentes, uso personal.</div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div className="container__img"><img src={card} /></div>
-
-                        <div className="container__card" >
-                            <div className="container__card__titulo">
-                                <div className="container__card__titulo__anio">2019</div> 
-                                <h3 className="container__card__titulo__marca">Toyota</h3>
-                            </div>
-
-                            <div className="container__card__tipo">Mecanico</div>
-
-                            <div className="container__card__precio">
-                                <div><box-icon type="solid" name='no-entry' color="white"></box-icon></div>
-                                <div className="container__card__precio__precio1">$ 1,200</div> |
-                                <h3 className="container__card__precio__precio2">$24,000</h3>
-                            </div>
-                            <hr />
-                            <div className="container__card__kilometros">
-                                <div><box-icon type="solid" name='ev-station' color="white"></box-icon></div>
-                                <div>32,000 Kilometros</div>
-                            </div>
-                            <div className="container__card__color">
-                                <div><box-icon name='color-fill' color="white"></box-icon></div>
-                                <div>Exterior negro</div>
-                            </div>
-                            <div className="container__card__descripcion">
-                                <div><box-icon name='taxi' color="white"></box-icon></div>
-                                <div>Sin accidentes, uso personal.</div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div className="container__img"><img src={card} /></div>
-
-                        <div className="container__card" >
-                            <div className="container__card__titulo">
-                                <div className="container__card__titulo__anio">2019</div> 
-                                <h3 className="container__card__titulo__marca">Toyota</h3>
-                            </div>
-
-                            <div className="container__card__tipo">Mecanico</div>
-
-                            <div className="container__card__precio">
-                                <div><box-icon type="solid" name='no-entry' color="white"></box-icon></div>
-                                <div className="container__card__precio__precio1">$ 1,200</div> |
-                                <h3 className="container__card__precio__precio2">$24,000</h3>
-                            </div>
-                            <hr />
-                            <div className="container__card__kilometros">
-                                <div><box-icon type="solid" name='ev-station' color="white"></box-icon></div>
-                                <div>32,000 Kilometros</div>
-                            </div>
-                            <div className="container__card__color">
-                                <div><box-icon name='color-fill' color="white"></box-icon></div>
-                                <div>Exterior negro</div>
-                            </div>
-                            <div className="container__card__descripcion">
-                                <div><box-icon name='taxi' color="white"></box-icon></div>
-                                <div>Sin accidentes, uso personal.</div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <div className="container__img"><img src={card} /></div>
-
-                        <div className="container__card" >
-                            <div className="container__card__titulo">
-                                <div className="container__card__titulo__anio">2019</div> 
-                                <h3 className="container__card__titulo__marca">Toyota</h3>
-                            </div>
-
-                            <div className="container__card__tipo">Mecanico</div>
-
-                            <div className="container__card__precio">
-                                <div><box-icon type="solid" name='no-entry' color="white"></box-icon></div>
-                                <div className="container__card__precio__precio1">$ 1,200</div> |
-                                <h3 className="container__card__precio__precio2">$24,000</h3>
-                            </div>
-                            <hr />
-                            <div className="container__card__kilometros">
-                                <div><box-icon type="solid" name='ev-station' color="white"></box-icon></div>
-                                <div>32,000 Kilometros</div>
-                            </div>
-                            <div className="container__card__color">
-                                <div><box-icon name='color-fill' color="white"></box-icon></div>
-                                <div>Exterior negro</div>
-                            </div>
-                            <div className="container__card__descripcion">
-                                <div><box-icon name='taxi' color="white"></box-icon></div>
-                                <div>Sin accidentes, uso personal.</div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
+                    <Cards />
                 </div>
                 
             </div> );

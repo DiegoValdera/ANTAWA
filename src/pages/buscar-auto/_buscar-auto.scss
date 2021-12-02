@@ -49,6 +49,7 @@
 .container__img img {
     width: 100%;
     height: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 .container__img{
@@ -68,6 +69,7 @@
         padding: 15px;
         color: #fff;
         border-radius: 0 0 10px 10px;
+        height: 350px;
 
         &__titulo{
             display: flex;

@@ -432,7 +432,8 @@ header .i .user:hover {
 /*Imagen para adaptar al div*/
 .container__img img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  border-radius: 10px 10px 0 0; }
 
 .container__img {
   background-color: #264653;
@@ -448,7 +449,8 @@ header .i .user:hover {
     margin: 0;
     padding: 15px;
     color: #fff;
-    border-radius: 0 0 10px 10px; }
+    border-radius: 0 0 10px 10px;
+    height: 350px; }
     .container__card__titulo {
       display: flex;
       align-items: center;
