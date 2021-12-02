@@ -11,3 +11,5 @@
 4- tener instalado el complemento Live Sass Compiler en code
 
 ---------------------------------------------------------------
+5- ejecutar servidor falso
+npm run fake-api
