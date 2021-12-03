@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ANTAWA/static/css/main.264cfaab.chunk.css",
-    "main.js": "/ANTAWA/static/js/main.ac1f8e9d.chunk.js",
-    "main.js.map": "/ANTAWA/static/js/main.ac1f8e9d.chunk.js.map",
+    "main.css": "/ANTAWA/static/css/main.58ba9344.chunk.css",
+    "main.js": "/ANTAWA/static/js/main.2a9e247c.chunk.js",
+    "main.js.map": "/ANTAWA/static/js/main.2a9e247c.chunk.js.map",
     "runtime-main.js": "/ANTAWA/static/js/runtime-main.406033b9.js",
     "runtime-main.js.map": "/ANTAWA/static/js/runtime-main.406033b9.js.map",
     "static/js/2.c207a58e.chunk.js": "/ANTAWA/static/js/2.c207a58e.chunk.js",
     "static/js/2.c207a58e.chunk.js.map": "/ANTAWA/static/js/2.c207a58e.chunk.js.map",
     "index.html": "/ANTAWA/index.html",
-    "static/css/main.264cfaab.chunk.css.map": "/ANTAWA/static/css/main.264cfaab.chunk.css.map",
+    "static/css/main.58ba9344.chunk.css.map": "/ANTAWA/static/css/main.58ba9344.chunk.css.map",
     "static/js/2.c207a58e.chunk.js.LICENSE.txt": "/ANTAWA/static/js/2.c207a58e.chunk.js.LICENSE.txt",
     "static/media/auto.dc49e16e.png": "/ANTAWA/static/media/auto.dc49e16e.png",
     "static/media/logo.6d8fc0c4.svg": "/ANTAWA/static/media/logo.6d8fc0c4.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.406033b9.js",
     "static/js/2.c207a58e.chunk.js",
-    "static/css/main.264cfaab.chunk.css",
-    "static/js/main.ac1f8e9d.chunk.js"
+    "static/css/main.58ba9344.chunk.css",
+    "static/js/main.2a9e247c.chunk.js"
   ]
 }
