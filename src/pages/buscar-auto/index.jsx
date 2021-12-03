@@ -2,6 +2,7 @@ import React from 'react'
 import Marcas from './apimarca';
 import Cards from './apicard';
 import Modelo from './apimodelo';
+import Categoria from './apicategoria';
 
 import 'boxicons';
 
@@ -59,9 +60,7 @@ const BcrAuto = () => {
                     <div className="filtro__titulo">
                         <div>Categoria</div>
                         <div>
-                            <select className="filtro__titulo__selects">
-                                <option value="0">Todos</option>
-                            </select>
+                            <Categoria />
                         </div>
                     </div>
 
