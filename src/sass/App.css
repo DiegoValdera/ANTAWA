@@ -435,6 +435,35 @@ table {
   border: 1px solid #ecd659;
 }
 
+.filtro__filtrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filtro__filtrar button {
+  background-color: #E9C46A;
+  color: #264653;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.filtro__filtrar button:hover {
+  background-color: #eed89f;
+  color: #264653;
+  cursor: pointer;
+}
+
 /*Imagen para adaptar al div*/
 .container__img img {
   width: 100%;

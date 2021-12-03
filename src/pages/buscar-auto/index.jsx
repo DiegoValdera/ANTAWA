@@ -1,34 +1,9 @@
 import React from 'react'
 import Marcas from './apimarca';
 import Cards from './apicard';
-import card from '../../img/card.png';
+import Modelo from './apimodelo';
+
 import 'boxicons';
-
-
-/*Mostrar las modelo en un select
-function Modelos() {
-    const [Modelo, setModelo] = useState([])
-    const urlM = 'http://localhost:5000/marcas'
-
-    const fetchApiModelo = () =>{
-        fetch(urlM)
-        .then(response => response.json())
-        .then(data => (console.log(data)))
-        .catch(error =>console.log(error))      
-    };
-    useEffect(()=>{fetchApiModelo(urlM)},[])
-
-return ( 
-    <select className="filtro__titulo__selects">
-            <option value="">--Seleccione--</option>
-        {Modelo.filtrer((itemM, index) =>(
-            <option key={index} value={itemM.id=2}>{itemM.modelos}</option>
-        ))}
-        
-    </select> 
-    );
-}
-*/
 
 
 const BcrAuto = () => {
@@ -36,6 +11,7 @@ const BcrAuto = () => {
     return ( 
             <div className="main_buscar_auto">                
                 <div className="filtro">
+                <form>
                     <div className="filtro__titulo">
                         <div>Ubicación</div>
                         <div>
@@ -53,10 +29,8 @@ const BcrAuto = () => {
                     </div>
                     <div className="filtro__titulo">
                         <div>Modelo</div>
-                        <div>
-                            <select id="modelo" className="filtro__titulo__selects">
-                                <option value="0">Todos</option>
-                            </select>
+                        <div>                            
+                            <Modelo />
                         </div>
                     </div>
                     <div className="filtro__titulo">
@@ -64,11 +38,21 @@ const BcrAuto = () => {
                         <div>
                             <select className="filtro__titulo__selects">
                                 <option value="0">Desde</option>
+                                <option value="2010">2010</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
                             </select>
                         </div>
                         <div>
                             <select className="filtro__titulo__selects">
                                 <option value="0">Hasta</option>
+                                <option value="2010">2010</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
                             </select>
                         </div>
                     </div>
@@ -105,6 +89,10 @@ const BcrAuto = () => {
                             <input type="text" className="filtro__titulo__inputs" placeholder="200.000" />
                         </div>
                     </div>
+                    <div className="filtro__filtrar">
+                        <button>BUSCAR</button>
+                    </div>
+                </form>
                 </div>
 
                 <div className="container">

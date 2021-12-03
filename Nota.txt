@@ -13,3 +13,6 @@
 ---------------------------------------------------------------
 5- ejecutar servidor falso
 npm run fake-api
+
+npm run deploy
+

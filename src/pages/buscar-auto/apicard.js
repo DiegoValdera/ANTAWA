@@ -1,5 +1,4 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import card from '../../img/card.png';
 
 function Cards() {
     const [Oferta, setOferta] = useState([])
