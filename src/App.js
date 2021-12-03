@@ -23,6 +23,7 @@ function App() {
 
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/ANTAWA" component={Home} />
             <Route exact path="/buscar-auto" component={BcrAuto} />
             <Route exact path="/detalle" component={DetAuto} />
             <Route exact path="/contactform" component={ContactForm} />
