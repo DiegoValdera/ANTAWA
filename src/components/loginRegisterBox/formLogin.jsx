@@ -3,22 +3,38 @@ import { NavLink as Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from 'react-redux';
 
 
 function FormLogin(){
+
   const url = 'http://localhost:5000/vendedores/';
   const initialFormValues = {email:"", password:""};
   const [formValues, setFormValues] = useState(initialFormValues);
   const history = useHistory();
+  const dispatch = useDispatch();
 
   const checkEmail = (serverUsers, formData) => {
-    const user = serverUsers.find(user => user.email === formData.email.value && user.contraseña === formData.password.value)
+    console.log(serverUsers);
+    console.log(formData.email.value);
+    console.log(formData.password.value);
 
+    const user = serverUsers
+      .find(user => user.email == formData.email.value && user.contraseña == formData.password.value)
+    // console.log(user);
     if (user){
       alert("Ingeso correcto!");
-      setTimeout(()=>{
+      dispatch({
+        type: 'SET_LOGIN',
+        payload: true,
+      });
+      dispatch({
+        type: 'SET_USER',
+        payload: user,
+      });
+      // setTimeout(()=>{
         history.push('/');
-      }, 1000)
+      // }, 1000);
     } else{
       alert("Cuenta no existe");
     }
@@ -27,7 +43,7 @@ function FormLogin(){
   let handleChange = (e) =>{
     const {name, value} = e.target;
     setFormValues({...formValues, [name]:value});
-    console.log(formValues);
+    // console.log(formValues);
   }
 
   let handleSubmit = (e) =>{

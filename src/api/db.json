@@ -203,6 +203,15 @@
       "dni": "08541263",
       "celular": "999456123",
       "id": 2
+    },
+    {
+      "nombre": "pedro",
+      "Apellido": "castillo",
+      "email": "pcastillo@presidente2.com",
+      "contraseña": "123456",
+      "dni": "00000000",
+      "celular": "999700566",
+      "id": 5
     }
   ],
   "combustibles": [
@@ -415,7 +424,7 @@
       "photos": [
         "https://cde.neoauto.pe/autos_usados/800x600/663163/663163_2246008.jpg?20211130002909",
         "https://cde.neoauto.pe/autos_usados/196x164/663163/663163_7295871.jpg?20211130002909",
-    "https://cde.neoauto.pe/autos_usados/196x164/663163/663163_8169825.jpg?20211130002909"
+        "https://cde.neoauto.pe/autos_usados/196x164/663163/663163_8169825.jpg?20211130002909"
       ],
       "id": 3
     }

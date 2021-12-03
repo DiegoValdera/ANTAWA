@@ -11,24 +11,26 @@ import Usados from './pages/usados/index';
 import BcrAuto from './pages/buscar-auto/index';
 import ContactForm from './pages/usados/index'
 
+import store from './store';
+
 function App() {
   return (
     <div className="App">
-      <Provider>
-      <Router>
-        <Header />
+      <Provider store={store}>
+        <Router>
+          <Header />
 
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/buscar-auto" component={BcrAuto} />
-          <Route exact path="/usados" component={Usados} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/contactform" component={ContactForm} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/buscar-auto" component={BcrAuto} />
+            <Route exact path="/usados" component={Usados} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/contactform" component={ContactForm} />
 
-        </Switch>
+          </Switch>
 
-      </Router>
+        </Router>
       </Provider>
     </div>
 
