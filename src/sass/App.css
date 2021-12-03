@@ -1,3 +1,53 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 header ul a {
   color: #fff;
   text-decoration: none;
@@ -76,61 +126,17 @@ header .i .user:hover {
   padding: 10px;
 }
 
+.isLoginName {
+  color: white;
+  font-size: 24px;
+  font-family: 'Raleway';
+}
+
 /*Responsive para pantalla moviles*/
 @media (min-width: 200px) and (max-width: 720px) {
   .header__ul {
     display: none;
   }
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 .banner img {
@@ -376,6 +382,251 @@ table {
   .form1 {
     margin-left: 150px;
     margin-right: 150px;
+  }
+}
+
+.Wrapper__LoginBox {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.LoginBox {
+  height: 500px;
+  background: #E9C46A;
+  width: 400px;
+  margin: auto;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.LoginBox > h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #264653;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Button__LogReg {
+  background: #E76F51;
+  border: transparent;
+  border-radius: 10px;
+  padding: 15px 50px;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.LoginBox__form {
+  margin-top: 10px;
+  height: 400px;
+  color: #264653;
+}
+
+.LoginBox__form form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LoginBox__form input {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.LoginBox__form form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.LoginBox__text {
+  text-align: center;
+  font-size: 14px;
+}
+
+.LoginBox__text a {
+  color: white;
+}
+
+.FormRegister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 30px;
+}
+
+.FormRegister label {
+  font-size: 12px;
+  color: #264653;
+}
+
+.FormRegister h5 {
+  color: #264653;
+}
+
+.FormRegister input {
+  font-size: 14px;
+}
+
+.FormRegister p {
+  font-size: 10px;
+}
+
+.FormRegister__2row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FormRegister__2row input {
+  width: 150px;
+}
+
+.FormRegister__1row {
+  text-align: center;
+}
+
+.FormRegister__1row input {
+  width: 327px;
+}
+
+.FormRegister__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.FormRegister__check label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputHigh input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding-left: 8px;
+}
+
+.FormRegister__divHigh {
+  height: 45px;
+}
+
+.FormRegister__divHigh p {
+  position: absolute;
+  color: #fd592f;
+}
+
+.RightRegister {
+  width: 50%;
+  max-width: 600px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.RightRegister h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #264653;
+  margin-bottom: 30px;
+}
+
+.RightRegister__txtImg > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RightRegister__txtImg p {
+  padding: 0 50px;
+  color: #264653;
+}
+
+@media (max-width: 1100px) {
+  .RightRegister {
+    display: none;
+  }
+}
+
+.Register__Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  .Register__Wrapper {
+    height: auto;
   }
 }
 

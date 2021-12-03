@@ -68,6 +68,12 @@ header .i .user:hover{
     }
 }
 
+.isLoginName{
+    color: white;
+    font-size: 24px;
+    font-family: 'Raleway';
+  }
+
 /*Responsive para pantalla moviles*/
 @media (min-width:200px) and (max-width:720px) {
     .header{

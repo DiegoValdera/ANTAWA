@@ -1,7 +1,19 @@
-@import '../components/header/header';
 @import './reset';
+// Components
+@import '../components/header/header';
 @import '../components/main/banner';
 @import '../components/main/formulario';
+@import '../components/loginRegisterBox/boxLogReg';
+@import '../components/loginRegisterBox/buttonLogin';
+@import '../components/loginRegisterBox/formLogin';
+@import '../components/loginRegisterBox/formRegister';
+@import '../components/loginRegisterBox/rightRegister';
+
+// Pages
+@import '../pages/login/login';
+@import '../pages/registerUser/registerUser';
+@import '../pages/usados/usados';
+
 @import '../pages/buscar-auto/buscar-auto';
 
 body{

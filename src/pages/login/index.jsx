@@ -1,10 +1,16 @@
+import { BoxLogReg } from "../../components/loginRegisterBox/boxLogReg";
+import { FormLogin } from "../../components/loginRegisterBox/formLogin";
+
 const Login = () => {
-    return ( 
+
+    return (
         <main>
-            <h2>Este es el login</h2> 
+            <BoxLogReg TituloBox="Ingresa tu cuenta">
+              <FormLogin/>
+            </BoxLogReg>
         </main>
     );
 }
- 
+
 export default Login;
 
