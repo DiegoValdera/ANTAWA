@@ -1,4 +1,5 @@
 import React, {Fragment, useEffect, useState} from 'react';
+import { NavLink as Link } from 'react-router-dom';
 
 function Cards() {
     const [Oferta, setOferta] = useState([])
@@ -16,8 +17,9 @@ function Cards() {
         <Fragment>
             {Oferta.map((Ofertas, index) =>(
             <div key={index}>
+                <Link exact to="/detalle">
                 <div className="container__img"><img src={Ofertas.photos[0]} /></div>
-
+                </Link>
                 <div className="container__card" >
                     <div className="container__card__titulo">
                         <div className="container__card__titulo__anio">{Ofertas.añomodelo}</div> 

@@ -9,7 +9,8 @@ import Login from './pages/login/index';
 import Register from './pages/registerUser';
 import Usados from './pages/usados/index';
 import BcrAuto from './pages/buscar-auto/index';
-import ContactForm from './pages/usados/index'
+import DetAuto from './pages/detalle-auto';
+import ContactForm from './pages/usados/index';
 
 import store from './store';
 
@@ -23,6 +24,8 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/buscar-auto" component={BcrAuto} />
+            <Route exact path="/detalle" component={DetAuto} />
+            <Route exact path="/contactform" component={ContactForm} />
             <Route exact path="/usados" component={Usados} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />

@@ -34,7 +34,7 @@ const Nav = () => {
                 <li><Link exact to="/buscar-autos" activeClassName="a_active">Motos</Link></li>
             </ul>
         </li>
-        <li className="header__li"><Link exact to="4" activeClassName="a_active">Vende tu auto</Link></li>
+        <li className="header__li"><Link exact to="/vende" activeClassName="a_active">Vende tu auto</Link></li>
         {!isLogin ? (<>
           <li className="header__li"><Link exact to="/register" activeClassName="a_active">Registrate</Link></li>
           <li className="i">

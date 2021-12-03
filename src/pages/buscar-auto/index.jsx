@@ -104,7 +104,7 @@ const BcrAuto = () => {
                 </div>
 
                 <div className="container">
-                    <Cards />
+                <Cards />
                 </div>
                 
             </div> );
