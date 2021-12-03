@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 
 // Mostrar los modelos en un select
 const Modelo = () => {
@@ -14,13 +14,11 @@ const Modelo = () => {
     useEffect(()=>{fetchApiModelo(url)},[])
 
 return ( 
-    <select className="filtro__titulo__selects">
-            <option value="">--Seleccione--</option>
+    <Fragment>
             {Modelo.map((item, index) =>(
             <option key={index} value={item.id=5}>{item.modelos[10]}</option>
              ))}
-        
-    </select> 
+    </Fragment> 
     );
 }
 

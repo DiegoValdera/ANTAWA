@@ -1,8 +1,8 @@
 import React from 'react'
-import Marcas from './apimarca';
-import Cards from './apicard';
-import Modelo from './apimodelo';
-import Categoria from './apicategoria';
+import Marc from '../../api/marca';
+import Cards from '../../api/apicard';
+import Modelo from '../../api/modelo';
+import Categoria from '../../api/categoria';
 
 import 'boxicons';
 
@@ -18,20 +18,26 @@ const BcrAuto = () => {
                         <div>
                             <select className="filtro__titulo__selects">
                                 <option value="0">--Seleccione--</option>
-                                <option value="1">Lima</option>
+                                <option value="1" selected>Lima</option>
                             </select>
                         </div>
                     </div>
                     <div className="filtro__titulo">
                         <div>Marca</div>
                         <div>
-                            <Marcas />
+                            <select id="modelo" className="filtro__titulo__selects">
+                                <option value="0">Escoge tu marca</option>
+                                <Marc />
+                            </select>
                         </div>
                     </div>
                     <div className="filtro__titulo">
                         <div>Modelo</div>
-                        <div>                            
-                            <Modelo />
+                        <div>
+                            <select className="filtro__titulo__selects">
+                                <option value="0">Escoge tu modelo</option>                 
+                                <Modelo />
+                            </select>
                         </div>
                     </div>
                     <div className="filtro__titulo">
@@ -60,7 +66,9 @@ const BcrAuto = () => {
                     <div className="filtro__titulo">
                         <div>Categoria</div>
                         <div>
-                            <Categoria />
+                            <select className="filtro__titulo__selects">
+                                <Categoria />
+                            </select>
                         </div>
                     </div>
 
@@ -71,7 +79,7 @@ const BcrAuto = () => {
                         <div>
                             <input type="text" className="filtro__titulo__inputs" placeholder="S/. 10000" />
                         </div>
-                        <div>A</div>
+                        <div>a</div>
                         <div>
                             <input type="text" className="filtro__titulo__inputs" placeholder="S/. 500000" />
                         </div>
@@ -83,7 +91,7 @@ const BcrAuto = () => {
                         <div>
                             <input type="text" className="filtro__titulo__inputs" placeholder="0" />
                         </div>
-                        <div>A</div>
+                        <div>a</div>
                         <div>
                             <input type="text" className="filtro__titulo__inputs" placeholder="200.000" />
                         </div>

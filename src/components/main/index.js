@@ -1,6 +1,8 @@
 import React , {Fragment} from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import auto from '../../img/auto.png';
+import Marc from '../../api/marca';
+import Modelo from '../../api/modelo';
 
 
 const Banner = () => {
@@ -27,9 +29,11 @@ const Formulario = () => {
                     <input type="text" placeholder="Buscar auto" className="form1__buscar__frm-buscar"/>
                     <select name="marca" id="marca">
                         <option value="0">Escoge tu marca</option>
+                        <Marc />
                     </select>
                     <select name="modelo" id="modelo">
                         <option value="0">Escoge tu modelo</option>
+                        <Modelo />
                     </select>
                 </div>
 

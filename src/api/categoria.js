@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 
 const Categoria = () => {
 
@@ -14,12 +14,11 @@ const Categoria = () => {
     useEffect(() => {fetchAppCategoria(urlc)}, [])
 
     return ( 
-        <select className="filtro__titulo__selects">
-            <option value="0">Todos</option>
+        <Fragment>
             {cat.map((itemC,index)=>(
                 <option key={index} value={itemC.id}>{itemC.categoria}</option>
             ))}
-        </select>
+        </Fragment>
      );
 }
  

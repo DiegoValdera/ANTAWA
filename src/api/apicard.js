@@ -15,7 +15,7 @@ function Cards() {
     return ( 
         <Fragment>
             {Oferta.map((Ofertas, index) =>(
-            <div>
+            <div key={index}>
                 <div className="container__img"><img src={Ofertas.photos[0]} /></div>
 
                 <div className="container__card" >
