@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ANTAWA/static/css/main.7f942d8f.chunk.css",
-    "main.js": "/ANTAWA/static/js/main.04d196cd.chunk.js",
-    "main.js.map": "/ANTAWA/static/js/main.04d196cd.chunk.js.map",
+    "main.js": "/ANTAWA/static/js/main.b6fa751b.chunk.js",
+    "main.js.map": "/ANTAWA/static/js/main.b6fa751b.chunk.js.map",
     "runtime-main.js": "/ANTAWA/static/js/runtime-main.406033b9.js",
     "runtime-main.js.map": "/ANTAWA/static/js/runtime-main.406033b9.js.map",
     "static/js/2.5edc6428.chunk.js": "/ANTAWA/static/js/2.5edc6428.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.406033b9.js",
     "static/js/2.5edc6428.chunk.js",
     "static/css/main.7f942d8f.chunk.css",
-    "static/js/main.04d196cd.chunk.js"
+    "static/js/main.b6fa751b.chunk.js"
   ]
 }
