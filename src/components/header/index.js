@@ -41,7 +41,7 @@ const Nav = () => {
               <Link exact to="/login" activeClassName="a_active" className="user">
                   <box-icon name='user'></box-icon>
               </Link>
-          </li></>) : (<li className="isLoginName"> Bienvenido <br/> {userData.nombre} {userData.Apellido}</li>)}
+          </li></>) : (<li className="isLoginName"> Bienvenido: <br/> {userData.nombre} {userData.Apellido}</li>)}
     </ul>
     );
 }
