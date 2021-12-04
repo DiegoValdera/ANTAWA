@@ -1,9 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import auto from "../../img/auto.png";
-// import Marc from "../../api/marca";
-import Modelo from "../../api/modelo";
 import { api } from "../../api/api";
 
 const Banner = () => {
@@ -41,6 +39,21 @@ const Formulario = (props) => {
   useEffect(() => {
     setModelos(marcas.filter((marca) => marca.id == form.brand));
   }, [form.brand]);
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+    params.set("search", form.search);
+    params.set("brand", form.brand);
+    params.set("model", form.model);
+    params.set("year_from", form.year_from);
+    params.set("year_to", form.year_to);
+    params.set("price", form.price);
+    window.history.replaceState(
+      {},
+      "",
+      `${window.location.pathname}?${params}`
+    );
+  }, [form]);
 
   return (
     <Fragment>
@@ -148,34 +161,31 @@ const Formulario = (props) => {
 };
 
 const Home = () => {
-  const [marcas, setMarcas] = useState([]);
-  const [modelos, setModelo] = useState([]);
   const history = useHistory();
   const dispatch = useDispatch();
+  const marcas = useSelector((state) => state.car.cars);
 
-  function Search(payload) {
-    console.log("peticion a la base de datos", payload);
-    api.get("/ofertas").then(({ data }) => {
-      console.log("data", data);
-      dispatch({
-        type: "SET_CARS_OFFERS",
-        payload: data,
-      });
-      history.push("/buscar-auto");
+  function Search() {
+    history.push({
+      pathname: `/buscar-auto`,
+      search: window.location.search,
     });
   }
 
   const fetchMarca = () => {
     api
       .get("/marcas")
-      .then(({ data }) => setMarcas(data))
+      .then(({ data: cars }) => {
+        dispatch({
+          type: "SET_CARS",
+          payload: cars,
+        });
+      })
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
-    console.log("inicio!!!");
     fetchMarca();
-    // fetchApiModelo();
   }, []);
 
   return (
@@ -183,7 +193,6 @@ const Home = () => {
       <Banner />
       <Formulario
         marcas={marcas}
-        modelos={modelos}
         onSubmit={(payload) => {
           Search(payload);
         }}
