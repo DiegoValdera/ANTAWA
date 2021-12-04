@@ -35,7 +35,7 @@ function FormRegister(){
       })
       alert("Registro exitoso");
       setTimeout(() => {
-        history.push('/');
+        history.push('/login');
       }, 1000);
     }
 

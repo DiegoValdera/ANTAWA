@@ -862,7 +862,7 @@ form {
           justify-content: center;
   gap: 20px;
   padding: 30px;
-  height: 79.5vh;
+  height: 130vh;
   background: linear-gradient(63.29deg, rgba(38, 70, 83, 0.37) 0%, rgba(233, 196, 106, 0.6) 100.34%, rgba(255, 255, 255, 0) 100.35%);
 }
 
@@ -942,6 +942,7 @@ form {
 .container__img img {
   width: 100%;
   height: 100%;
+  max-height: 200px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -1057,6 +1058,9 @@ form {
 }
 
 @media (min-width: 818px) and (max-width: 1050px) {
+  .main_buscar_auto {
+    height: 200vh;
+  }
   .container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -1064,6 +1068,9 @@ form {
 }
 
 @media (min-width: 590px) and (max-width: 817px) {
+  .main_buscar_auto {
+    height: 410vh;
+  }
   .container {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -1073,7 +1080,7 @@ form {
 @media (min-width: 200px) and (max-width: 589px) {
   .main_buscar_auto {
     display: block;
-    height: 1000vh;
+    height: 450vh;
   }
   .filtro {
     background-color: #264653;
