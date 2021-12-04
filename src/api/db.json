@@ -203,24 +203,6 @@
       "dni": "08541263",
       "celular": "999456123",
       "id": 2
-    },
-    {
-      "nombre": "Diego",
-      "Apellido": "Valdera",
-      "email": "dvaldera123@gmail.com",
-      "contraseña": "Diego123",
-      "dni": "76348637",
-      "celular": "977636689",
-      "id": 3
-    },
-    {
-      "nombre": "Juana",
-      "Apellido": "Curo",
-      "email": "123@hotmail.com",
-      "contraseña": "123456",
-      "dni": "74134885",
-      "celular": "963258741",
-      "id": 4
     }
   ],
   "combustibles": [
@@ -362,7 +344,7 @@
       "idVendedor": 2,
       "descripcion": "Toyota Yaris semi-nuevo, 4 puertas, 1300cc, con aros de aleación, 2 Airbags",
       "idMarca": 1,
-      "marca": "toyota",
+      "marca": "Toyota",
       "modelo": "Yaris",
       "categoria": "sedan",
       "añomfabricacion": "2015",
@@ -410,7 +392,7 @@
       "idVendedor": 1,
       "descripcion": "Sedan amplio Toyota Corolla sedan 1.8cvt año 2019 modelo 2019, 50,739 km de recorrido, transmision automatica cvt",
       "idMarca": 1,
-      "marca": "toyota",
+      "marca": "Toyota",
       "modelo": "Corolla",
       "categoria": "sedan",
       "añomfabricacion": "2017",
@@ -430,6 +412,84 @@
         "https://cde.neoauto.pe/autos_usados/196x164/663163/663163_8169825.jpg?20211130002909"
       ],
       "id": 3
+    },
+	  {
+      "idVendedor": 1,
+      "descripcion": "SUV 4x4 Hyundai poco uso super moderna lo vendo por viaje aproveche esta oportunidad unica 1.6T 2021, transmision automatica cvt",
+      "idMarca": 4,
+      "marca": "Hyundai",
+      "modelo": "Tucson",
+      "categoria": "camioneta-suv",
+      "añomfabricacion": "2020",
+      "añomodelo": "2021",
+      "kilometraje": "1263",
+      "transmision": "automatica",
+      "combustible": "gasolina",
+      "cilindrada": "1.6 T",
+      "numeropuertas": 5,
+      "color": "azul_pastel",
+      "preciodolares": "24000",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-03-blue-exterior-front-angle-suv-scaled.jpg",
+        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-04-blue-exterior-profile-suv-scaled.jpg",
+        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-02-badge-blue-exterior-front-grille-headlights-suv-scaled.jpg",
+		    "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-07-badge-blue-exterior-suv-scaled.jpg"
+      ],
+      "id": 4
+    },
+    {
+      "idVendedor": 2,
+      "descripcion": "Vendo mi auto Nissan Versa 1600 cc mecanico Dual con GNV con llantas nuevas, radio con pantalla tactil color negro en excelentes condiciones",
+      "idMarca": 3,
+      "marca": "Nissan",
+      "modelo": "Versa",
+      "categoria": "sedan",
+      "añomfabricacion": "2020",
+      "añomodelo": "2019",
+      "kilometraje": "27000",
+      "transmision": "mecanica",
+      "combustible": "dual-gnv",
+      "cilindrada": "1600",
+      "numeropuertas": 4,
+      "color": "negro",
+      "preciodolares": "11200",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://apollo-virginia.akamaized.net/v1/files/erodnpi0mf772-PE/image;s=780x0;q=60",
+        "https://apollo-virginia.akamaized.net/v1/files/i64jvnomleai-PE/image;s=780x0;q=60",
+		    "https://apollo-virginia.akamaized.net/v1/files/upmmg2uw7enm2-PE/image;s=780x0;q=60",
+		    "https://apollo-virginia.akamaized.net/v1/files/v55rab2hqmuf2-PE/image;s=780x0;q=60"
+      ],
+      "id": 5
+    },
+	  {
+      "idVendedor": 1,
+      "descripcion": "VW Modelo Passat año 2014 sedan 4 puertas, Perfecto Estado de Uso particular Dama, Vendo por Viaje",
+      "idMarca": 5,
+      "marca": "Volkswagen",
+      "modelo": "Passat",
+      "categoria": "sedan",
+      "añomfabricacion": "2013",
+      "añomodelo": "2014",
+      "kilometraje": "65200",
+      "transmision": "automatica",
+      "combustible": "gasolina",
+      "cilindrada": "2000cc",
+      "numeropuertas": 4,
+      "color": "plateado",
+      "preciodolares": "8900",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60",
+        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-02-badge-blue-exterior-front-grille-headlights-suv-scaled.jpg",
+		    "https://apollo-virginia.akamaized.net/v1/files/jjgjuik7z6cz2-PE/image;s=780x0;q=60",
+		    "https://apollo-virginia.akamaized.net/v1/files/xzy7d5ef94r92-PE/image;s=780x0;q=60"
+      ],
+      "id": 6
     }
   ]
 }
