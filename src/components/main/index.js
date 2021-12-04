@@ -6,9 +6,9 @@ import { api } from "../../api/api";
 
 const Banner = () => {
   return (
-    <div class="banner">
+    <div className="banner">
       <img src={auto} alt="" />
-      <h1 class="banner__slogan">Encuentra el auto de tus sueños</h1>
+      <h1 className="banner__slogan">Encuentra el auto de tus sueños</h1>
     </div>
   );
 };
@@ -37,7 +37,7 @@ const Formulario = (props) => {
   }
 
   useEffect(() => {
-    setModelos(marcas.filter((marca) => marca.id === form.brand));
+    setModelos(marcas.filter((marca) => marca.id == form.brand));
   }, [form.brand]);
 
   useEffect(() => {
@@ -119,7 +119,7 @@ const Formulario = (props) => {
           </div>
 
           <div className="form1__periodo">
-            <label for="anio">Año</label>
+            <label htmlFor="anio">Año</label>
             <input
               className="form1__periodo__num"
               type="date"
@@ -137,7 +137,7 @@ const Formulario = (props) => {
               }}
             />
 
-            <label for="rango" className="form1__periodo__espacio">
+            <label htmlFor="rango" className="form1__periodo__espacio">
               Rango de precio S/.
             </label>
             <input
