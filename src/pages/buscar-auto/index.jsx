@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import Marc from "../../api/marca";
 // import Cards from "../../api/apicard";
 // import Modelo from "../../api/modelo";
-// import Categoria from "../../api/categoria";
+import Categoria from "../../api/categoria";
 import { useSelector } from "react-redux";
 import { Car } from "./components/car";
 import { api } from "../../api/api";
