@@ -203,18 +203,6 @@
       "dni": "08541263",
       "celular": "999456123",
       "id": 2
-<<<<<<< HEAD
-    },
-    {
-      "nombre": "Diego",
-      "Apellido": "Valdera",
-      "email": "dvaldera123@gmail.com",
-      "contraseña": "Diego123",
-      "dni": "76348637",
-      "celular": "977636689",
-      "id": 3
-=======
->>>>>>> 878439855e2a39ac29b85b7a9e4bad5204c70b40
     }
   ],
   "combustibles": [
