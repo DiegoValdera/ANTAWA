@@ -28,7 +28,7 @@ const Nav = () => {
     <ul className="header__ul">
         <li className="header__li"><Link exact to="/usados" activeClassName="a_active">Usados</Link></li>
         <li className="header__li"><Link exact to="2" activeClassName="a_active">Financiación</Link></li>
-        <li className="header__li"><Link exact to="/buscar-auto" activeClassName="a_active">Mas</Link>
+        <li className="header__li"><Link exact to="/buscar-auto" activeClassName="a_active">Catalogo</Link>
             <ul>
                 <li><Link exact to="/buscar-autos" activeClassName="a_active">Autos</Link></li>
                 <li><Link exact to="/buscar-autos" activeClassName="a_active">Motos</Link></li>
