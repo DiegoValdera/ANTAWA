@@ -173,7 +173,7 @@ const BcrAuto = () => {
             <div>
               <select className="filtro__titulo__selects">
                 <option value="0">Escoge tu Categoria</option>
-                {/* <Categoria /> */}
+                { <Categoria /> }
               </select>
             </div>
           </div>

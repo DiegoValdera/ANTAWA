@@ -37,6 +37,7 @@ const Nav = () => {
 
     return (
     <ul className="header__ul">
+<<<<<<< HEAD
         {/* <li className="header__li"><Link exact to="/usados" activeClassName="a_active">Usados</Link></li>
         <li className="header__li"><Link exact to="2" activeClassName="a_active">Financiación</Link></li> */}
         <li className="header__li"><Link exact to="/buscar-auto" activeClassName="a_active">Catalogo</Link>
@@ -48,6 +49,10 @@ const Nav = () => {
         {!isLogin ? '' :
         <li className="header__li"><Link exact to="/publicar-auto" activeClassName="a_active">Vende tu auto</Link></li>
         }
+=======
+        <li className="header__li"><Link exact to="/buscar-auto?search=0&brand=0&model=0&year_from=0&year_to=0&price=0" activeClassName="a_active">Catalogo</Link></li>
+        <li className="header__li"><Link exact to="/vende" activeClassName="a_active">Vende tu auto</Link></li>
+>>>>>>> 878439855e2a39ac29b85b7a9e4bad5204c70b40
         {!isLogin ? (<>
           <li className="header__li"><Link exact to="/register" activeClassName="a_active">Registrate</Link></li>
           <li className="i">
