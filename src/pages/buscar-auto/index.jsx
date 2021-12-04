@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import Marc from "../../api/marca";
-// import Cards from "../../api/apicard";
-// import Modelo from "../../api/modelo";
+import Marc from "../../api/marca";
+import Cards from "../../api/apicard";
+import Modelo from "../../api/modelo";
 import Categoria from "../../api/categoria";
 import { useSelector } from "react-redux";
 import { Car } from "./components/car";
@@ -65,7 +65,7 @@ const BcrAuto = () => {
   }, [queryString]);
 
   useEffect(() => {
-    setModelos(marcas.filter((marca) => marca.id === form.brand));
+    setModelos(marcas.filter((marca) => marca.id == form.brand));
   }, [form.brand]);
 
   useEffect(() => {
@@ -77,7 +77,7 @@ const BcrAuto = () => {
     params.set("year_from", form.year_from);
     params.set("year_to", form.year_to);
     params.set("price", form.price);
-
+   
     window.history.replaceState(
       {},
       "",

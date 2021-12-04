@@ -205,7 +205,6 @@
       "id": 2
     },
     {
-<<<<<<< HEAD
       "nombre": "Diego",
       "Apellido": "Valdera",
       "email": "dvaldera123@gmail.com",
@@ -222,15 +221,6 @@
       "dni": "74125896",
       "celular": "977636665",
       "id": 4
-=======
-      "nombre": "lucero",
-      "Apellido": "ybarhuen",
-      "email": "lucero@gmail.com",
-      "contraseña": "test",
-      "dni": "88889999",
-      "celular": "999888777",
-      "id": 3
->>>>>>> 60fdbcf567b1a820a1ca2b4aac2330ecbc0dd48f
     }
   ],
   "combustibles": [
@@ -461,11 +451,8 @@
       "region": "Lima",
       "photos": [
         "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-02-badge-blue-exterior-front-grille-headlights-suv-scaled.jpg",
-<<<<<<< HEAD
         "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-04-blue-exterior-profile-suv-scaled.jpg",
         "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-03-blue-exterior-front-angle-suv-scaled.jpg",
-=======
->>>>>>> 60fdbcf567b1a820a1ca2b4aac2330ecbc0dd48f
         "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-07-badge-blue-exterior-suv-scaled.jpg"
       ],
       "id": 4

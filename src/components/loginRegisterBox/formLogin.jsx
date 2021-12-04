@@ -15,9 +15,13 @@ function FormLogin(){
   const dispatch = useDispatch();
 
   const checkEmail = (serverUsers, formData) => {
+    console.log(serverUsers);
+    console.log(formData.email.value);
+    console.log(formData.password.value);
 
     const user = serverUsers
-      .find(user => user.email === formData.email.value && user.contraseña === formData.password.value)
+      .find(user => user.email == formData.email.value && user.contraseña == formData.password.value)
+    // console.log(user);
     if (user){
       alert("Ingeso correcto!");
       dispatch({
@@ -28,7 +32,9 @@ function FormLogin(){
         type: 'SET_USER',
         payload: user,
       });
+      // setTimeout(()=>{
         history.push('/');
+      // }, 1000);
     } else{
       alert("Cuenta no existe");
     }
@@ -37,11 +43,12 @@ function FormLogin(){
   let handleChange = (e) =>{
     const {name, value} = e.target;
     setFormValues({...formValues, [name]:value});
+    // console.log(formValues);
   }
 
   let handleSubmit = (e) =>{
     e.preventDefault();
-    // const checkUser =
+    const checkUser =
       axios
         .get(url)
         .then(

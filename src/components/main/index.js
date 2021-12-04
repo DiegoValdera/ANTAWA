@@ -6,9 +6,9 @@ import { api } from "../../api/api";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div class="banner">
       <img src={auto} alt="" />
-      <h1 className="banner__slogan">Encuentra el auto de tus sueños</h1>
+      <h1 class="banner__slogan">Encuentra el auto de tus sueños</h1>
     </div>
   );
 };
@@ -119,7 +119,7 @@ const Formulario = (props) => {
           </div>
 
           <div className="form1__periodo">
-            <label htmlFor="anio">Año</label>
+            <label for="anio">Año</label>
             <input
               className="form1__periodo__num"
               type="date"
@@ -137,7 +137,7 @@ const Formulario = (props) => {
               }}
             />
 
-            <label htmlFor="rango" className="form1__periodo__espacio">
+            <label for="rango" className="form1__periodo__espacio">
               Rango de precio S/.
             </label>
             <input
