@@ -21,7 +21,7 @@ function Cards() {
         <div key={index}>
           <Link exact to="/detalle">
             <div className="container__img">
-              <img src={Ofertas.photos[0]} />
+              <img src={Ofertas.photos[0]} alt="ofertas"/>
             </div>
           </Link>
           <div className="container__card">

@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 function FormRegister(){
 
   const url = 'http://localhost:5000/vendedores';
-  const pageHome = '/';
+  // const pageHome = '/';
   const initialValues = { nombre:"", Apellido:"", email:"", contraseña:"", dni:"", celular:"" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -27,7 +27,7 @@ function FormRegister(){
   }
 
   useEffect(() => {
-    if(Object.keys(formErrors).length == 0 && isSubmit){
+    if(Object.keys(formErrors).length === 0 && isSubmit){
       axios
       .post(url,formValues)
       .then(() => {
@@ -35,7 +35,7 @@ function FormRegister(){
       })
       alert("Registro exitoso");
       setTimeout(() => {
-        history.push('/');
+        history.push('/login');
       }, 1000);
     }
 

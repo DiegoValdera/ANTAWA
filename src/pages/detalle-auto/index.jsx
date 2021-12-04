@@ -1,7 +1,7 @@
 //importar el index
 import auto1 from "../../img/card.png";
-import auto2 from "../../img/auto.png";
-import { NavLink as Link } from "react-router-dom";
+// import auto2 from "../../img/auto.png";
+// import { NavLink as Link } from "react-router-dom";
 
 const DetAuto = () => {
   return (

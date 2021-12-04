@@ -2,32 +2,32 @@ import { NavLink as Link } from "react-router-dom";
 
 function Car(props) {
   const {
-    idVendedor,
+    // idVendedor,
     descripcion,
-    idMarca,
+    // idMarca,
     marca,
     modelo,
-    categoria,
-    añomfabricacion,
+    // categoria,
+    // añomfabricacion,
     añomodelo,
     kilometraje,
     transmision,
-    combustible,
-    cilindrada,
-    numeropuertas,
+    // combustible,
+    // cilindrada,
+    // numeropuertas,
     color,
     preciodolares,
-    autonuevo,
-    region,
+    // autonuevo,
+    // region,
     photos,
-    id,
+    // id,
   } = props;
 
   return (
     <div className="car-component">
       <Link exact to="/detalle">
         <div className="container__img">
-          <img src={photos[0]} />
+          <img src={photos[0]} alt="car"/>
         </div>
       </Link>
       <div className="container__card">
