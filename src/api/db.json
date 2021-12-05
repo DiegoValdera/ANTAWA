@@ -203,24 +203,6 @@
       "dni": "08541263",
       "celular": "999456123",
       "id": 2
-    },
-    {
-      "nombre": "Diego",
-      "Apellido": "Valdera",
-      "email": "dvaldera123@gmail.com",
-      "contraseña": "Diego123",
-      "dni": "76348637",
-      "celular": "987456321",
-      "id": 3
-    },
-    {
-      "nombre": "Dalia",
-      "Apellido": "Valles",
-      "email": "123@hotmail.com",
-      "contraseña": "123456",
-      "dni": "74125896",
-      "celular": "977636665",
-      "id": 4
     }
   ],
   "combustibles": [
@@ -431,7 +413,7 @@
       ],
       "id": 3
     },
-    {
+	{
       "idVendedor": 1,
       "descripcion": "SUV 4x4 Hyundai poco uso super moderna lo vendo por viaje aproveche esta oportunidad unica 1.6T 2021, transmision automatica cvt",
       "idMarca": 4,
@@ -450,9 +432,9 @@
       "autonuevo": false,
       "region": "Lima",
       "photos": [
-        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-02-badge-blue-exterior-front-grille-headlights-suv-scaled.jpg",
-        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-04-blue-exterior-profile-suv-scaled.jpg",
         "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-03-blue-exterior-front-angle-suv-scaled.jpg",
+        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-04-blue-exterior-profile-suv-scaled.jpg",
+        "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-02-badge-blue-exterior-front-grille-headlights-suv-scaled.jpg",
         "https://images.cars.com/cldstatic/wp-content/uploads/hyundai-kona-2022-07-badge-blue-exterior-suv-scaled.jpg"
       ],
       "id": 4
@@ -482,8 +464,8 @@
         "https://apollo-virginia.akamaized.net/v1/files/v55rab2hqmuf2-PE/image;s=780x0;q=60"
       ],
       "id": 5
-    },
-    {
+	},
+	{
       "idVendedor": 1,
       "descripcion": "VW Modelo Passat año 2014 sedan 4 puertas, Perfecto Estado de Uso particular Dama, Vendo por Viaje",
       "idMarca": 5,
@@ -508,6 +490,114 @@
         "https://apollo-virginia.akamaized.net/v1/files/xzy7d5ef94r92-PE/image;s=780x0;q=60"
       ],
       "id": 6
+    },
+	{
+      "idVendedor": 2,
+      "descripcion": "HYUNDAI GRAN I10 SEDAN FULL EQUIPO 2015. Ocasión, impecable como nuevo, única propietaria, full equipo, en excelente estado, uso particular, súper económico. Papeles en regla, mantenimiento en el concesionario de la marca.",
+      "idMarca": 4,
+      "marca": "Hyundai",
+      "modelo": "I10",
+      "categoria": "sedan",
+      "añomfabricacion": "2015",
+      "añomodelo": "2016",
+      "kilometraje": "44957",
+      "transmision": "manual",
+      "combustible": "gasolina",
+      "cilindrada": "1200cc",
+      "numeropuertas": 4,
+      "color": "blanco",
+      "preciodolares": "9500",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_926176-MPE47906857330_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_813789-MPE47906864299_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_603510-MPE47906867243_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_623552-MPE47906857352_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_603014-MPE47906846625_102021-F.webp"
+      ],
+      "id": 7
+    },
+	{
+      "idVendedor": 1,
+      "descripcion": "Carro nuevo comprado en Noviembre 2020. Como nuevo todavía conserva las etiquetas y envolturas. Precio negociable.",
+      "idMarca": 4,
+      "marca": "Hyundai",
+      "modelo": "Venue",
+      "categoria": "camioneta-suv",
+      "añomfabricacion": "2020",
+      "añomodelo": "2020",
+      "kilometraje": "3829",
+      "transmision": "automatica",
+      "combustible": "gasolina",
+      "cilindrada": "2400cc",
+      "numeropuertas": 5,
+      "color": "verde",
+      "preciodolares": "19500",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_692351-MPE48345011494_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_901720-MPE48344956913_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_789297-MPE48345021508_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_963142-MPE48344954838_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759944-MPE48345074096_112021-F.webp"
+      ],
+      "id": 8
+    },
+	{
+      "idVendedor": 1,
+      "descripcion": "VW Modelo Passat año 2008 sedan 4 puertas, Color gris, frenos ABS, parlantes, aire acondicionado, batería nueva, todo ok listo para la venta",
+      "idMarca": 5,
+      "marca": "Volkswagen",
+      "modelo": "Passat",
+      "categoria": "sedan",
+      "añomfabricacion": "2008",
+      "añomodelo": "2009",
+      "kilometraje": "108352",
+      "transmision": "automatica",
+      "combustible": "gasolina",
+      "cilindrada": "2000cc",
+      "numeropuertas": 4,
+      "color": "plateado",
+      "preciodolares": "10000",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://onecdn.arya.com.pe/appone/vehiculo/4485_4906_24175947_large.png",
+        "https://onecdn.arya.com.pe/appone/vehiculo/d3db4ccadd8d95c60e161609a3b1006818ca9f99.png",
+        "https://onecdn.arya.com.pe/appone/vehiculo/c3ad79e25673ae39f9f7a7a9b75c3cfff11bcf20.png",
+        "https://onecdn.arya.com.pe/appone/vehiculo/d59751cf3874169e55e948761db6e667bb9b905d.png",
+        "https://onecdn.arya.com.pe/appone/vehiculo/c56fd4baa936b31ef4d434d4ca59d66488dc81cf.png"
+      ],
+      "id": 9
+    },
+    {
+      "idVendedor": 2,
+      "descripcion": "GLP Versión : SEMIFULL 1.8 M/T Revisión Técnica Septiembre 2022 SOAT hasta Julio 2022. Aire Acondicionado Cámara Retroceso Sensores de Retroceso Lunas Eléctricas Delanteras y Posteriores. Equipo Sonido Bluetooth Táctil.",
+      "idMarca": 1,
+      "marca": "Toyota",
+      "modelo": "corolla",
+      "categoria": "sedan",
+      "añomfabricacion": "2011",
+      "añomodelo": "2012",
+      "kilometraje": "93120",
+      "transmision": "mecánica",
+      "combustible": "dual-glp",
+      "cilindrada": "1800cc",
+      "numeropuertas": 4,
+      "color": "rojo",
+      "preciodolares": "12000",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_933793-MPE48273030858_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_978001-MPE48273025924_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_680708-MPE48273093665_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_674380-MPE48273055999_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_762042-MPE48273047749_112021-F.webp"
+      ],
+      "id": 10
     }
   ]
 }

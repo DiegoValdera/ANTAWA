@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
+import Navbar from "./components/header/Navbar/Navbar";
 
 import "./sass/App.css";
-import Header from "./components/header/index";
 import Home from "./components/main/index";
 import Login from "./pages/login/index";
 import Register from "./pages/registerUser";
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <Router>
-          <Header />
+          <Navbar />
 
           <Switch>
             <Route exact path="/" component={Home} />
