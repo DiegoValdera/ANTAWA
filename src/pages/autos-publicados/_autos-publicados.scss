@@ -80,3 +80,28 @@
   }
 
 }
+
+.main_buscar_auto_publish{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  height: 100%;
+  background: linear-gradient(63.29deg, rgba(38, 70, 83, 0.37) 0%, rgba(233, 196, 106, 0.6) 100.34%, rgba(255, 255, 255, 0) 100.35%);
+  flex-direction: column;
+
+  >div:last-child{
+    text-align: center;
+  }
+
+  button{
+    background: #264653;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: transparent;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}

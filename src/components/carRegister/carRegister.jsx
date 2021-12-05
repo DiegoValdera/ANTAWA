@@ -7,12 +7,8 @@ import { useSelector, useDispatch } from 'react-redux';
 
 const CarRegister = () =>{
 
-  const userDataId = useSelector((state) => {
-    return state.auth.userData.id;
-  });
-
-  const carrosData = useSelector((state) => {
-    return state.publsh.cars_published;
+  const userData = useSelector((state) => {
+    return state.auth.userData;
   });
 
   const initialStateValues = {
@@ -32,7 +28,7 @@ const CarRegister = () =>{
     photos: [],
     descripcion: "",
     autonuevo: false,
-    idVendedor: userDataId,
+    idVendedor: userData.id,
   }
 
   const [newDataCar, setNewDataCar] = useState([]);
@@ -101,6 +97,13 @@ const CarRegister = () =>{
     console.log(formErrors);
   };
 
+  const [carsDataPublished, getCarsDataPublished] = useState([]);
+
+  const getCarsPublished = async () => {
+    const CarsPublished = await api.get("/ofertas");
+    return CarsPublished.data;
+  }
+
   useEffect(() => {
     if(Object.keys(formErrors).length === 0 && isSubmit){
       axios
@@ -110,18 +113,24 @@ const CarRegister = () =>{
       })
       console.log(newDataForm);
       console.log(formErrors);
-      addCarsData();
+      // addCarsData();
+
+      const getAllCarsPublished = async () => {
+        const allCarsPublished = await getCarsPublished();
+        const ifPublish = allCarsPublished.filter(publicacion => userData.id == publicacion.idVendedor);
+        getCarsDataPublished(ifPublish);
+        dispatch({
+          type:"SET_PUBLISH_CARS",
+          payload: ifPublish,
+        });
+      }
+      getAllCarsPublished();
+      setTimeout(() => {
+        alert("Registro Exitoso");
+        history.push('/autos-publicados');
+      }, 500);
     }
   },[formErrors])
-
-  const addCarsData = () => {
-    dispatch({
-      type: "SET_PUBLISH_CARS",
-      payload: newDataForm,
-    });
-    alert("Registro Exitoso");
-    history.push('/autos-publicados');
-  }
 
   const validate = (values) => {
     const errors = {};

@@ -817,6 +817,94 @@
         "https://http2.mlstatic.com/D_NQ_NP_2X_939307-MPE48404166538_122021-F.webp"
       ],
       "id": 15
+    },
+    {
+      "marca": "Nissan",
+      "modelo": "Tiida",
+      "categoria": "camioneta-suv",
+      "añomfabricacion": "123123",
+      "añomodelo": "123123",
+      "kilometraje": "123123123",
+      "transmision": "mecanica",
+      "combustible": "dual-gnv",
+      "cilindrada": "12341234",
+      "numeropuertas": "4",
+      "color": "rojo",
+      "preciodolares": "1234123412341234",
+      "region": "Moquegua",
+      "photos": [
+        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
+      ],
+      "descripcion": "aafdadfsdfdf pruebaaa",
+      "autonuevo": false,
+      "idVendedor": 1,
+      "id": 16
+    },
+    {
+      "marca": "Nissan",
+      "modelo": "Kicks",
+      "categoria": "camioneta-suv",
+      "añomfabricacion": "2000",
+      "añomodelo": "2000",
+      "kilometraje": "135000",
+      "transmision": "mecanica",
+      "combustible": "gasolina",
+      "cilindrada": "1300",
+      "numeropuertas": "4",
+      "color": "rojo",
+      "preciodolares": "100000",
+      "region": "Apurimac",
+      "photos": [
+        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
+      ],
+      "descripcion": "rpuebaaasdifuaopsidufpoasiudf",
+      "autonuevo": false,
+      "idVendedor": 6,
+      "id": 17
+    },
+    {
+      "marca": "Kia",
+      "modelo": "Koup",
+      "categoria": "deportivo",
+      "añomfabricacion": "2010",
+      "añomodelo": "2010",
+      "kilometraje": "1231234",
+      "transmision": "mecanica",
+      "combustible": "gasolina",
+      "cilindrada": "1500",
+      "numeropuertas": "4",
+      "color": "rojo",
+      "preciodolares": "50000",
+      "region": "Lima",
+      "photos": [
+        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
+      ],
+      "descripcion": "ñjalkshdfkljahsdflkjashdf",
+      "autonuevo": false,
+      "idVendedor": 6,
+      "id": 18
+    },
+    {
+      "marca": "Volkswagen",
+      "modelo": "Beetle",
+      "categoria": "deportivo",
+      "añomfabricacion": "2020",
+      "añomodelo": "2020",
+      "kilometraje": "10000",
+      "transmision": "mecanica",
+      "combustible": "gasolina",
+      "cilindrada": "1600",
+      "numeropuertas": "4",
+      "color": "verde",
+      "preciodolares": "1000000",
+      "region": "Lima",
+      "photos": [
+        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
+      ],
+      "descripcion": "Se realiza venta debido a viaje a los EEUU",
+      "autonuevo": false,
+      "idVendedor": 1,
+      "id": 19
     }
   ]
 }

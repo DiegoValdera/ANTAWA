@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import CardCarPublish from './card-car-publicado';
 import imgprueba1from from '../../img/auto.png';
+import { NavLink as Link } from 'react-router-dom';
 
 const CarsPublished = () => {
 
@@ -11,7 +12,7 @@ const CarsPublished = () => {
   console.log("dataCarsPublished",dataCarsPublished);
 
   return(
-    <div className="main_buscar_auto">
+    <div className="main_buscar_auto_publish">
       {/* <CardCarPublish/> */}
       <div className="publishCar__wrapper">
         {Object.keys(dataCarsPublished).length == 0 ? '' : dataCarsPublished.map((e)=>{
@@ -53,6 +54,11 @@ const CarsPublished = () => {
         })
 
       }
+      </div>
+      <div>
+        <Link to="/publicar-auto">
+          <button>Publicar</button>
+        </Link>
       </div>
     </div>
   )
