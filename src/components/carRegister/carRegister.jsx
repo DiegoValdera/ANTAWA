@@ -2,12 +2,17 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import { api } from "../../api/api";
 import { useHistory } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+
 
 const CarRegister = () =>{
 
   const userDataId = useSelector((state) => {
     return state.auth.userData.id;
+  });
+
+  const carrosData = useSelector((state) => {
+    return state.publsh.cars_published;
   });
 
   const initialStateValues = {
@@ -38,6 +43,7 @@ const CarRegister = () =>{
   const [formErrors, setFormErrors] = useState({});
   const history = useHistory();
 
+  const dispatch = useDispatch();
 
   const getDataCar = async () => {
       const dataCar = await api.get("/marcas");
@@ -104,6 +110,12 @@ const CarRegister = () =>{
       })
       console.log(newDataForm);
       console.log(formErrors);
+      alert("Registro Exitoso");
+      dispatch({
+        type: "SET_PUBLISH_CARS",
+        payload: newDataForm,
+      });
+      history.push('/autos-publicados');
     }
   },[formErrors])
 
@@ -148,8 +160,8 @@ const CarRegister = () =>{
     if(!values.region){
       errors.region = "Es obligatorio ingresar región"
     }
-    if(!values.photo){
-      errors.photo = "Es obligatorio ingresar link de photo"
+    if(!values.photos){
+      errors.photos = "Es obligatorio ingresar link de photo"
     }
     if(!values.descripcion){
       errors.descripcion = "Es obligatorio ingresar descripción"
@@ -276,8 +288,8 @@ const CarRegister = () =>{
               <p>{formErrors.region}</p>
             </div>
             <div className="FormRegister__divHigh">
-              <input value={newDataForm.photo} onChange={handleChangeFoto} name="photos" id="photos" type="text" placeholder="Link de photo" />
-              <p>{formErrors.photo}</p>
+              <input value={newDataForm.photos} onChange={handleChangeFoto} name="photos" id="photos" type="text" placeholder="Link de photo" />
+              <p>{formErrors.photos}</p>
             </div>
             <div className="gridInputPublishCar FormRegister__divHigh">
               <textarea value={newDataForm.descripcion} onChange={handleChange} name="descripcion" id="descripcion" type="text" placeholder="Ingresa descripción" className="inputDatoDescription">Ingrese descripción</textarea>

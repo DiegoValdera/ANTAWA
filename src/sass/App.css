@@ -836,6 +836,47 @@ form {
     margin-top: 30px;
     cursor: pointer; }
 
+.publishCar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px; }
+
+.publishCar__data {
+  height: 200px;
+  width: 100%;
+  background: #E9C46A;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #264653;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 900px; }
+  .publishCar__data h1 {
+    margin-left: 30px;
+    font-size: 24px; }
+  .publishCar__data > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; }
+    .publishCar__data > div > div h2:last-child {
+      color: white;
+      font-size: 18px;
+      margin-top: 10px; }
+  .publishCar__data img {
+    height: 100px;
+    width: 200px;
+    margin-left: 20px; }
+  .publishCar__data .publishCar__dataInput {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; }
+
 body {
   font-family: 'Raleway'; }
 

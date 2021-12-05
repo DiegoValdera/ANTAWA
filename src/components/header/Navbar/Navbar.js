@@ -76,8 +76,6 @@ const isLogin = useSelector((state) => {
         type: "SET_PUBLISH_CARS",
         payload: ifPublish,
       });
-      console.log(allCarsPublished);
-      console.log(userData);
     }
   getAllCarsPublished();
   },[userData])

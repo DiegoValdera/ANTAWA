@@ -239,6 +239,51 @@
       "dni": "99998888",
       "celular": "999888777",
       "id": 6
+    },
+    {
+      "nombre": "Jordan",
+      "Apellido": "castillo",
+      "email": "castillo@presidente.com",
+      "contraseña": "test",
+      "dni": "44448888",
+      "celular": "999888777",
+      "id": 7
+    },
+    {
+      "nombre": "Peter",
+      "Apellido": "Parker",
+      "email": "parker@avengers.com",
+      "contraseña": "test",
+      "dni": "77778888",
+      "celular": "999888777",
+      "id": 8
+    },
+    {
+      "nombre": "jordan",
+      "Apellido": "Parker",
+      "email": "ppp@gmail.com",
+      "contraseña": "test",
+      "dni": "12345678",
+      "celular": "999888777",
+      "id": 9
+    },
+    {
+      "nombre": "pedro",
+      "Apellido": "castillo",
+      "email": "castillo@newpresidente.com",
+      "contraseña": "test",
+      "dni": "44449999",
+      "celular": "999888777",
+      "id": 10
+    },
+    {
+      "nombre": "pia",
+      "Apellido": "maria",
+      "email": "maria@gmail.com",
+      "contraseña": "test",
+      "dni": "88887777",
+      "celular": "888999777",
+      "id": 11
     }
   ],
   "combustibles": [
