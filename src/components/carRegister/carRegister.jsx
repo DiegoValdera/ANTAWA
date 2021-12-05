@@ -3,7 +3,7 @@ import axios from 'axios';
 import { api } from "../../api/api";
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-
+import swal from 'sweetalert';
 
 const CarRegister = () =>{
 
@@ -126,7 +126,7 @@ const CarRegister = () =>{
       }
       getAllCarsPublished();
       setTimeout(() => {
-        alert("Registro Exitoso");
+        swal("Guardado", "Registro Exitoso", "success");
         history.push('/autos-publicados');
       }, 500);
     }

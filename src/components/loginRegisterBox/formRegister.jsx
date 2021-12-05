@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import swal from 'sweetalert';
 
 function FormRegister(){
 
@@ -33,7 +34,7 @@ function FormRegister(){
       .then(() => {
         console.log("Enviado a la base de datos")
       })
-      alert("Registro exitoso");
+      swal("Correcto", "Registro exitoso", "success");
       // setTimeout(() => {
         history.push('/login');
       // }, 1000);

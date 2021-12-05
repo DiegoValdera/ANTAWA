@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
+import swal from 'sweetalert';
 
 
 function FormLogin(){
@@ -19,7 +20,7 @@ function FormLogin(){
     const user = serverUsers
       .find(user => user.email === formData.email.value && user.contraseña === formData.password.value)
     if (user){
-      alert("Ingeso correcto!");
+      swal("Bienvenido", "Contraseña correcta", "success");
       dispatch({
         type: 'SET_LOGIN',
         payload: true,
@@ -30,7 +31,7 @@ function FormLogin(){
       });
         history.push('/');
     } else{
-      alert("Cuenta no existe");
+      swal("Error", "Contraseña incorrecta", "error");
     }
   }
 

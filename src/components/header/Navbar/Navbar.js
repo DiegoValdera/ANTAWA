@@ -18,7 +18,7 @@ import {
   FaTimes,
   FaHome,
   FaUserAlt,
-  FaBriefcase,
+  FaPowerOff,
   FaGlasses,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -76,6 +76,8 @@ const isLogin = useSelector((state) => {
         type: "SET_PUBLISH_CARS",
         payload: ifPublish,
       });
+      console.log(allCarsPublished);
+      console.log(userData);
     }
   getAllCarsPublished();
   },[userData])
@@ -151,18 +153,21 @@ const isLogin = useSelector((state) => {
 
               </>):(<>
                 <MenuItem>
+                <Link exact to="/" activeClassName="a_active">
                 <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                   <div>
-                    <FaHome />
+                    <FaUserAlt />
                     {userData.nombre} {userData.Apellido}
                   </div>
                 </MenuItemLink>
+                </Link>
               </MenuItem>
+
               <MenuItem>
               <Link exact to="/login" activeClassName="a_active">
                 <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                   <div onClick={handleButtonOnClick}>
-                    <FaGlasses />
+                    <FaPowerOff />
                       Cerrar Sesión
                   </div>
                 </MenuItemLink>
