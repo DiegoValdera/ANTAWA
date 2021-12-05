@@ -232,6 +232,7 @@ const BcrAuto = () => {
         {queryString.get("brand")} */}
         {/* <Cards /> */}
       </div>
+      
     </div>
   );
 };

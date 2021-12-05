@@ -203,6 +203,33 @@
       "dni": "08541263",
       "celular": "999456123",
       "id": 2
+    },
+    {
+      "nombre": "Pedro",
+      "Apellido": "Gamarra",
+      "email": "pgamarra@gmail.com",
+      "contraseña": "123456",
+      "dni": "08746458",
+      "celular": "998546238",
+      "id": 3
+    },
+    {
+      "nombre": "Omar",
+      "Apellido": "Mendieta",
+      "email": "omendieta@gmail.com",
+      "contraseña": "123456",
+      "dni": "47245622",
+      "celular": "997542526",
+      "id": 4
+    },
+    {
+      "nombre": "Alberto",
+      "Apellido": "Quinteros",
+      "email": "aquinteros@gmail.com",
+      "contraseña": "123456",
+      "dni": "04545627",
+      "celular": "995542526",
+      "id": 5
     }
   ],
   "combustibles": [
@@ -366,7 +393,7 @@
     },
     {
       "idVendedor": 2,
-      "descripcion": "KIA CERATO 2019 - AZUL AZURE - SEDAN Impecable (FACTURABLE 100%) - Motor a gasolina 1.6 LT de 4 cilindros en línea con potencia de 126 HP / 6.300 RPM y 155 Nm de Torque",
+      "descripcion": "Kia Cerato, azul azure, SEDAN Impecable, a gasolina 1.6 lt 4 cilindros 26 HP / 6.300 rpm",
       "idMarca": 2,
       "marca": "Kia",
       "modelo": "Cerato",
@@ -390,7 +417,7 @@
     },
     {
       "idVendedor": 1,
-      "descripcion": "Sedan amplio Toyota Corolla sedan 1.8cvt año 2019 modelo 2019, 50,739 km de recorrido, transmision automatica cvt",
+      "descripcion": "Toyota Corolla sedan 1.8cvt año 2019, con 50,739 km, transmision automatica cvt",
       "idMarca": 1,
       "marca": "Toyota",
       "modelo": "Corolla",
@@ -415,7 +442,7 @@
     },
 	{
       "idVendedor": 1,
-      "descripcion": "SUV 4x4 Hyundai poco uso super moderna lo vendo por viaje aproveche esta oportunidad unica 1.6T 2021, transmision automatica cvt",
+      "descripcion": "Hyundai SUV 4x4, vendo por viaje aproveche esta oportunidad, 1.6T 2021, transmision automatica",
       "idMarca": 4,
       "marca": "Hyundai",
       "modelo": "Tucson",
@@ -441,7 +468,7 @@
     },
     {
       "idVendedor": 2,
-      "descripcion": "Vendo mi auto Nissan Versa 1600 cc mecanico Dual con GNV con llantas nuevas, radio con pantalla tactil color negro en excelentes condiciones",
+      "descripcion": "Nissan Versa, mecanico. GNV, llantas nuevas, pantalla tactil, negro, excelentes condiciones",
       "idMarca": 3,
       "marca": "Nissan",
       "modelo": "Versa",
@@ -467,7 +494,7 @@
 	},
 	{
       "idVendedor": 1,
-      "descripcion": "VW Modelo Passat año 2014 sedan 4 puertas, Perfecto Estado de Uso particular Dama, Vendo por Viaje",
+      "descripcion": "VW Passat, 2014 sedan, perfecto Estado, uso particular,, Vendo por Viaje",
       "idMarca": 5,
       "marca": "Volkswagen",
       "modelo": "Passat",
@@ -493,7 +520,7 @@
     },
 	{
       "idVendedor": 2,
-      "descripcion": "HYUNDAI GRAN I10 SEDAN FULL EQUIPO 2015. Ocasión, impecable como nuevo, única propietaria, full equipo, en excelente estado, uso particular, súper económico. Papeles en regla, mantenimiento en el concesionario de la marca.",
+      "descripcion": "Hyundai I10 Sedan Full Equipo 2015. Ocasión, impecable como nuevo, único propietario",
       "idMarca": 4,
       "marca": "Hyundai",
       "modelo": "I10",
@@ -520,7 +547,7 @@
     },
 	{
       "idVendedor": 1,
-      "descripcion": "Carro nuevo comprado en Noviembre 2020. Como nuevo todavía conserva las etiquetas y envolturas. Precio negociable.",
+      "descripcion": "Carro comprado Noviembre 2020. Conserva las etiquetas y envolturas. Precio negociable",
       "idMarca": 4,
       "marca": "Hyundai",
       "modelo": "Venue",
@@ -547,7 +574,7 @@
     },
 	{
       "idVendedor": 1,
-      "descripcion": "VW Modelo Passat año 2008 sedan 4 puertas, Color gris, frenos ABS, parlantes, aire acondicionado, batería nueva, todo ok listo para la venta",
+      "descripcion": "VW Passat 2008 sedan, gris, frenos ABS, parlantes, aire acondicionado, batería nueva",
       "idMarca": 5,
       "marca": "Volkswagen",
       "modelo": "Passat",
@@ -574,7 +601,7 @@
     },
     {
       "idVendedor": 2,
-      "descripcion": "GLP Versión : SEMIFULL 1.8 M/T Revisión Técnica Septiembre 2022 SOAT hasta Julio 2022. Aire Acondicionado Cámara Retroceso Sensores de Retroceso Lunas Eléctricas Delanteras y Posteriores. Equipo Sonido Bluetooth Táctil.",
+      "descripcion": "Toyota GLP Versión Semifull 1.8cc, Aire Acondicionado, cámara retroceso, Bluetooth",
       "idMarca": 1,
       "marca": "Toyota",
       "modelo": "corolla",
@@ -598,6 +625,144 @@
         "https://http2.mlstatic.com/D_NQ_NP_2X_762042-MPE48273047749_112021-F.webp"
       ],
       "id": 10
+    },
+    {
+      "idVendedor": 3,
+      "descripcion": "Toyota Corolla 2017, unico dueño, full equipo, GLP, pestillos eléctricos, neblineros, GPS",
+      "idMarca": 1,
+      "marca": "Toyota",
+      "modelo": "corolla",
+      "categoria": "sedan",
+      "añomfabricacion": "2016",
+      "añomodelo": "2017",
+      "kilometraje": "40000",
+      "transmision": "mecánica",
+      "combustible": "dual-glp",
+      "cilindrada": "1800cc",
+      "numeropuertas": 4,
+      "color": "negro",
+      "preciodolares": "16800",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_947634-MPE46467450498_062021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_700233-MPE46467471372_062021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_627853-MPE46467445493_062021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_907829-MPE46467469374_062021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_863239-MPE46467366988_062021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_988190-MPE46467506127_062021-F.webp"
+      ],
+      "id": 11
+    },
+    {
+      "idVendedor": 3,
+      "descripcion": "Toyota, asientos de cuero, único dueño, sensor y pantalla retroceso, aros 16 De aleacion",
+      "idMarca": 1,
+      "marca": "Toyota",
+      "modelo": "corolla",
+      "categoria": "sedan",
+      "añomfabricacion": "2013",
+      "añomodelo": "2013",
+      "kilometraje": "95000",
+      "transmision": "mecánica",
+      "combustible": "gasolina",
+      "cilindrada": "1600cc",
+      "numeropuertas": 4,
+      "color": "plateado",
+      "preciodolares": "11390",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_981474-MPE47556185615_092021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_991307-MPE47556187584_092021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_672317-MPE47556292262_092021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_847297-MPE47556180650_092021-F.webp"
+      ],
+      "id": 12
+    },
+    {
+      "idVendedor": 3,
+      "descripcion": "Toyota Yaris blanco, en perfecto estado, sensor Retroceso, radio con pantalla tactil",
+      "idMarca": 1,
+      "marca": "Toyota",
+      "modelo": "yaris",
+      "categoria": "sedan",
+      "añomfabricacion": "2018",
+      "añomodelo": "2018",
+      "kilometraje": "120000",
+      "transmision": "automatica",
+      "combustible": "gasolina",
+      "cilindrada": "1300cc",
+      "numeropuertas": 4,
+      "color": "blanco",
+      "preciodolares": "14800",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_983839-MPE48145212765_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_814575-MPE48145223453_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_900151-MPE48145202977_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_828524-MPE48145207877_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_806075-MPE48145212764_112021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_741872-MPE48145202974_112021-F.webp"
+      ],
+      "id": 13
+    },
+    {
+      "idVendedor": 3,
+      "descripcion": "Nissan Versa, 2019, muy buen estado, para uso particular, bluetooth, radio y GPS incluido",
+      "idMarca": 3,
+      "marca": "Nissan",
+      "modelo": "Versa",
+      "categoria": "sedan",
+      "añomfabricacion": "2019",
+      "añomodelo": "2019",
+      "kilometraje": "42300",
+      "transmision": "automatica",
+      "combustible": "dual-glp",
+      "cilindrada": "1600cc",
+      "numeropuertas": 4,
+      "color": "gris",
+      "preciodolares": "10000",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_877525-MPE47745767953_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_686603-MPE47745774942_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_760046-MPE47745781931_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_808165-MPE47745857741_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_724862-MPE47745767977_102021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_695756-MPE47745992146_102021-F.webp"
+      ],
+      "id": 14
+    },
+    {
+      "idVendedor": 3,
+      "descripcion": "Nissan Sentra, 2008, 35,000 Km, full equipo, aire acondicionado. Automático, 2.0 lt, Gasolina",
+      "idMarca": 3,
+      "marca": "Nissan",
+      "modelo": "Sentra",
+      "categoria": "sedan",
+      "añomfabricacion": "2019",
+      "añomodelo": "2019",
+      "kilometraje": "35000",
+      "transmision": "automatica",
+      "combustible": "dual-glp",
+      "cilindrada": "1800cc",
+      "numeropuertas": 4,
+      "color": "rojo",
+      "preciodolares": "12000",
+      "autonuevo": false,
+      "region": "Lima",
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_915153-MPE48404138698_122021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_904564-MPE48404168545_122021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_766111-MPE48404183486_122021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_687936-MPE48404159600_122021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_791049-MPE48404183489_122021-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_939307-MPE48404166538_122021-F.webp"
+      ],
+      "id": 15
     }
   ]
 }

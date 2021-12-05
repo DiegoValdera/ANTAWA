@@ -25,7 +25,9 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/ANTAWA" component={Home} />
             <Route exact path="/buscar-auto" component={BcrAuto} />
-            <Route exact path="/detalle" component={DetAuto} />
+
+            <Route exact path="/detalle/:idcard" component={DetAuto} />
+
             <Route exact path="/contactform" component={ContactForm} />
             <Route exact path="/usados" component={Usados} />
             <Route exact path="/login" component={Login} />

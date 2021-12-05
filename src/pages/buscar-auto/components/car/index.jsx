@@ -23,9 +23,11 @@ function Car(props) {
     id,
   } = props;
 
+  const idcardlink=`/detalle/${id}`;
+
   return (
     <div className="car-component">
-      <Link exact to="/detalle">
+      <Link exact to={idcardlink}>
         <div className="container__img">
           <img src={photos[0]} />
         </div>
