@@ -1,0 +1,28 @@
+.firstPub__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1{
+    font-size: 72px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #264653;
+  }
+
+  // img{
+  //   margin-left: 50px;
+  // }
+
+  button{
+    background: #264653;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: transparent;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}

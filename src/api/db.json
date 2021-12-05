@@ -230,6 +230,15 @@
       "dni": "04545627",
       "celular": "995542526",
       "id": 5
+    },
+    {
+      "nombre": "Jordan",
+      "Apellido": "Terrazos",
+      "email": "jterrazos@tecsup.com",
+      "contraseña": "test",
+      "dni": "99998888",
+      "celular": "999888777",
+      "id": 6
     }
   ],
   "combustibles": [
@@ -440,7 +449,7 @@
       ],
       "id": 3
     },
-	{
+    {
       "idVendedor": 1,
       "descripcion": "Hyundai SUV 4x4, vendo por viaje aproveche esta oportunidad, 1.6T 2021, transmision automatica",
       "idMarca": 4,
@@ -491,8 +500,8 @@
         "https://apollo-virginia.akamaized.net/v1/files/v55rab2hqmuf2-PE/image;s=780x0;q=60"
       ],
       "id": 5
-	},
-	{
+    },
+    {
       "idVendedor": 1,
       "descripcion": "VW Passat, 2014 sedan, perfecto Estado, uso particular,, Vendo por Viaje",
       "idMarca": 5,
@@ -518,7 +527,7 @@
       ],
       "id": 6
     },
-	{
+    {
       "idVendedor": 2,
       "descripcion": "Hyundai I10 Sedan Full Equipo 2015. Ocasión, impecable como nuevo, único propietario",
       "idMarca": 4,
@@ -545,7 +554,7 @@
       ],
       "id": 7
     },
-	{
+    {
       "idVendedor": 1,
       "descripcion": "Carro comprado Noviembre 2020. Conserva las etiquetas y envolturas. Precio negociable",
       "idMarca": 4,
@@ -572,7 +581,7 @@
       ],
       "id": 8
     },
-	{
+    {
       "idVendedor": 1,
       "descripcion": "VW Passat 2008 sedan, gris, frenos ABS, parlantes, aire acondicionado, batería nueva",
       "idMarca": 5,

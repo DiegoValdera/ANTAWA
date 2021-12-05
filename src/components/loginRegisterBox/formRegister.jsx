@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 function FormRegister(){
 
   const url = 'http://localhost:5000/vendedores';
-  const pageHome = '/';
+  // const pageHome = '/';
   const initialValues = { nombre:"", Apellido:"", email:"", contraseña:"", dni:"", celular:"" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -27,16 +27,16 @@ function FormRegister(){
   }
 
   useEffect(() => {
-    if(Object.keys(formErrors).length == 0 && isSubmit){
+    if(Object.keys(formErrors).length === 0 && isSubmit){
       axios
       .post(url,formValues)
       .then(() => {
         console.log("Enviado a la base de datos")
       })
       alert("Registro exitoso");
-      setTimeout(() => {
+      // setTimeout(() => {
         history.push('/login');
-      }, 1000);
+      // }, 1000);
     }
 
   },[formErrors])
@@ -72,6 +72,7 @@ function FormRegister(){
     } else if (values.celular.length < 9 || values.celular.length > 9){
       errors.celular = "Número de celular inválido";
     }
+
     return errors;
   }
 
