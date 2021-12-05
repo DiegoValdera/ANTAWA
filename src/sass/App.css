@@ -674,7 +674,7 @@ form {
   justify-content: center;
   gap: 20px;
   padding: 30px;
-  height: 130vh;
+  height: 100%;
   background: linear-gradient(63.29deg, rgba(38, 70, 83, 0.37) 0%, rgba(233, 196, 106, 0.6) 100.34%, rgba(255, 255, 255, 0) 100.35%); }
 
 /*campo lateral para la busqueda de autos*/
@@ -856,7 +856,8 @@ form {
   color: #264653;
   font-size: 20px;
   font-weight: bold;
-  max-width: 900px; }
+  max-width: 900px;
+  position: relative; }
   .publishCar__data h1 {
     margin-left: 30px;
     font-size: 24px; }
@@ -888,7 +889,7 @@ form {
   flex-direction: column; }
   .main_buscar_auto_publish > div:last-child {
     text-align: center; }
-  .main_buscar_auto_publish button {
+  .main_buscar_auto_publish .btnPublicarCars button {
     background: #264653;
     color: white;
     font-size: 20px;
@@ -897,6 +898,20 @@ form {
     border: transparent;
     margin-top: 10px;
     cursor: pointer; }
+  .main_buscar_auto_publish .btnPublicarCars button:hover {
+    background: #0d3646; }
+
+.butonDeleteCars {
+  position: absolute;
+  top: -10px;
+  right: -10px; }
+  .butonDeleteCars button {
+    background: red;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer; }
+  .butonDeleteCars button:hover {
+    background: #a30101; }
 
 body {
   font-family: 'Raleway'; }

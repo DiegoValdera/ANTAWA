@@ -230,6 +230,15 @@
       "dni": "04545627",
       "celular": "995542526",
       "id": 5
+    },
+    {
+      "nombre": "Jordan",
+      "Apellido": "Terrazos",
+      "email": "jterrazos@codigo.com",
+      "contraseña": "test",
+      "dni": "44446666",
+      "celular": "999888777",
+      "id": 6
     }
   ],
   "combustibles": [
@@ -440,7 +449,7 @@
       ],
       "id": 3
     },
-	{
+    {
       "idVendedor": 1,
       "descripcion": "Hyundai SUV 4x4, vendo por viaje aproveche esta oportunidad, 1.6T 2021, transmision automatica",
       "idMarca": 4,
@@ -491,8 +500,8 @@
         "https://github.com/Bernie36/repo_img/blob/main/src/id_5_4.png?raw=true"
       ],
       "id": 5
-	},
-	{
+    },
+    {
       "idVendedor": 1,
       "descripcion": "VW Passat, 2014 sedan, perfecto Estado, uso particular,, Vendo por Viaje",
       "idMarca": 5,
@@ -517,7 +526,7 @@
       ],
       "id": 6
     },
-	{
+    {
       "idVendedor": 2,
       "descripcion": "Hyundai I10 Sedan Full Equipo 2015. Ocasión, impecable como nuevo, único propietario",
       "idMarca": 4,
@@ -544,7 +553,7 @@
       ],
       "id": 7
     },
-	{
+    {
       "idVendedor": 1,
       "descripcion": "Carro comprado Noviembre 2020. Conserva las etiquetas y envolturas. Precio negociable",
       "idMarca": 4,
@@ -571,7 +580,7 @@
       ],
       "id": 8
     },
-	{
+    {
       "idVendedor": 1,
       "descripcion": "VW Passat 2008 sedan, gris, frenos ABS, parlantes, aire acondicionado, batería nueva",
       "idMarca": 5,
@@ -762,94 +771,6 @@
         "https://github.com/Bernie36/repo_img/blob/main/src/id_15_6.png?raw=true"
       ],
       "id": 15
-    },
-    {
-      "marca": "Nissan",
-      "modelo": "Tiida",
-      "categoria": "camioneta-suv",
-      "añomfabricacion": "123123",
-      "añomodelo": "123123",
-      "kilometraje": "123123123",
-      "transmision": "mecanica",
-      "combustible": "dual-gnv",
-      "cilindrada": "12341234",
-      "numeropuertas": "4",
-      "color": "rojo",
-      "preciodolares": "1234123412341234",
-      "region": "Moquegua",
-      "photos": [
-        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
-      ],
-      "descripcion": "aafdadfsdfdf pruebaaa",
-      "autonuevo": false,
-      "idVendedor": 1,
-      "id": 16
-    },
-    {
-      "marca": "Nissan",
-      "modelo": "Kicks",
-      "categoria": "camioneta-suv",
-      "añomfabricacion": "2000",
-      "añomodelo": "2000",
-      "kilometraje": "135000",
-      "transmision": "mecanica",
-      "combustible": "gasolina",
-      "cilindrada": "1300",
-      "numeropuertas": "4",
-      "color": "rojo",
-      "preciodolares": "100000",
-      "region": "Apurimac",
-      "photos": [
-        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
-      ],
-      "descripcion": "rpuebaaasdifuaopsidufpoasiudf",
-      "autonuevo": false,
-      "idVendedor": 6,
-      "id": 17
-    },
-    {
-      "marca": "Kia",
-      "modelo": "Koup",
-      "categoria": "deportivo",
-      "añomfabricacion": "2010",
-      "añomodelo": "2010",
-      "kilometraje": "1231234",
-      "transmision": "mecanica",
-      "combustible": "gasolina",
-      "cilindrada": "1500",
-      "numeropuertas": "4",
-      "color": "rojo",
-      "preciodolares": "50000",
-      "region": "Lima",
-      "photos": [
-        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
-      ],
-      "descripcion": "ñjalkshdfkljahsdflkjashdf",
-      "autonuevo": false,
-      "idVendedor": 6,
-      "id": 18
-    },
-    {
-      "marca": "Volkswagen",
-      "modelo": "Beetle",
-      "categoria": "deportivo",
-      "añomfabricacion": "2020",
-      "añomodelo": "2020",
-      "kilometraje": "10000",
-      "transmision": "mecanica",
-      "combustible": "gasolina",
-      "cilindrada": "1600",
-      "numeropuertas": "4",
-      "color": "verde",
-      "preciodolares": "1000000",
-      "region": "Lima",
-      "photos": [
-        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
-      ],
-      "descripcion": "Se realiza venta debido a viaje a los EEUU",
-      "autonuevo": false,
-      "idVendedor": 1,
-      "id": 19
     }
   ]
 }

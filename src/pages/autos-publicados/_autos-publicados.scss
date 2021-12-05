@@ -48,6 +48,7 @@
   font-size: 20px;
   font-weight: bold;
   max-width: 900px;
+  position: relative;
 
   h1{
     margin-left: 30px;
@@ -94,14 +95,38 @@
     text-align: center;
   }
 
+  .btnPublicarCars{
+
+    button{
+      background: #264653;
+      color: white;
+      font-size: 20px;
+      padding: 15px 30px;
+      border-radius: 8px;
+      border: transparent;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: #0d3646;
+    }
+  }
+}
+
+.butonDeleteCars{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
   button{
-    background: #264653;
-    color: white;
-    font-size: 20px;
-    padding: 15px 30px;
-    border-radius: 8px;
+    background: red;
+    border-radius: 5px;
     border: transparent;
-    margin-top: 10px;
     cursor: pointer;
+  }
+
+  button:hover{
+    background: rgb(163, 1, 1);
   }
 }
