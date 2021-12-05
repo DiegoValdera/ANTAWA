@@ -11,6 +11,7 @@ const UserContact = () => {
     <div className="UserContact__Wrapper">
       <div className="UserContact__Data">
         <h3>Datos de Contacto</h3>
+        <div className="UserContact__line"></div>
         <div>
           <div>
             <h2>Nombre</h2>

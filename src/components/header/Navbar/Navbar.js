@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink as Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { api } from '../../../api/api';
 import {
   Container,
   LogoContainer,
@@ -17,7 +18,7 @@ import {
   FaTimes,
   FaHome,
   FaUserAlt,
-  FaBriefcase,
+  FaPowerOff,
   FaGlasses,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
@@ -33,18 +34,55 @@ const Logo = () => {
 
 
 const Navbar = () => {
+// ------------------------------------------------
+const userData = useSelector((state) => {
+  return state.auth.userData;
+});
 
-  const userData = useSelector((state) => {
-    return state.userData;
-  });
-  console.log(userData);
+const isLogin = useSelector((state) => {
+  return state.auth.isLogin;
+});
 
-  const isLogin = useSelector((state) => {
-    return state.isLogin;
-  });
-console.log(isLogin);
+  const dispatch = useDispatch();
 
+  const handleButtonOnClick = () =>{
+    dispatch({
+      type: 'SET_LOGIN',
+      payload: false,
+    });
+    dispatch({
+      type: 'SET_USER',
+      payload: {},
+    });
+    dispatch({
+      type: "SET_PUBLISH_CARS",
+      payload: [],
+    })
+  }
 
+  const [carsDataPublished, getCarsDataPublished] = useState([]);
+
+  const getCarsPublished = async () => {
+    const CarsPublished = await api.get("/ofertas");
+    return CarsPublished.data;
+  }
+
+  useEffect(() => {
+    const getAllCarsPublished = async () => {
+      const allCarsPublished = await getCarsPublished();
+      const ifPublish = allCarsPublished.filter(publicacion => userData.id == publicacion.idVendedor);
+      getCarsDataPublished(ifPublish);
+      dispatch({
+        type: "SET_PUBLISH_CARS",
+        payload: ifPublish,
+      });
+      console.log(allCarsPublished);
+      console.log(userData);
+    }
+  getAllCarsPublished();
+  },[userData])
+
+// ------------------------------------------------
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
@@ -80,8 +118,8 @@ console.log(isLogin);
                 </MenuItemLink>
               </Link>
             </MenuItem>
-            <MenuItem>
-              <Link exact to="/vende" activeClassName="a_active">
+            {!isLogin ? '' :  <MenuItem>
+              <Link exact to={Object.keys(carsDataPublished).length === 0 ? "/primera-publicacion": "/autos-publicados"} activeClassName="a_active">
                 <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                   <div>
                     <FaDollarSign />
@@ -89,7 +127,7 @@ console.log(isLogin);
                   </div>
                 </MenuItemLink>
               </Link>
-            </MenuItem>
+            </MenuItem>}
             {!isLogin ? (<>
             <MenuItem>
               <Link exact to="/register" activeClassName="a_active">
@@ -113,17 +151,30 @@ console.log(isLogin);
               </Link>
             </MenuItem>
 
-              </>):(
+              </>):(<>
                 <MenuItem>
+                <Link exact to="/" activeClassName="a_active">
                 <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                   <div>
-                    <FaHome />
+                    <FaUserAlt />
                     {userData.nombre} {userData.Apellido}
                   </div>
                 </MenuItemLink>
+                </Link>
               </MenuItem>
+
+              <MenuItem>
+              <Link exact to="/login" activeClassName="a_active">
+                <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                  <div onClick={handleButtonOnClick}>
+                    <FaPowerOff />
+                      Cerrar Sesión
+                  </div>
+                </MenuItemLink>
+              </Link>
+            </MenuItem></>
               )}
-    
+
           </Menu>
         </IconContext.Provider>
       </Wrapper>

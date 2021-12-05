@@ -53,20 +53,21 @@ class DetAuto extends Component{
 
             <div className="det-main">
               <div className="div1">
+
                 <div className="div1__slider">
-                  <div className="div1_slider_imagen">
+                  <div className="div1__slider__imagen">
                     <div className="div1_sliderimagen_lista">
                       <Slider {...settings}>
-                        <div className="div1_sliderimagen_elemento">
+                        <div className="div1_slider__imagen">
                           <img src={ofer.photos[0]} alt="1" />
                         </div>
-                        <div className="div1_sliderimagen_elemento">
+                        <div className="div1_slider__imagen">
                           <img src={ofer.photos[1]} alt="2" />
                         </div>
-                        <div className="div1_sliderimagen_elemento">
+                        <div className="div1_slider__imagen">
                           <img src={ofer.photos[0]} alt="3" />
                         </div>
-                        <div className="div1_sliderimagen_elemento">
+                        <div className="div1_slider__imagen">
                           <img src={ofer.photos[1]} alt="4" />
                         </div>
                       </Slider>
@@ -75,11 +76,11 @@ class DetAuto extends Component{
                 </div>
 
                 <div className="div1__frm">
-                  <div className="div1_frm_filtro">
+                  <div className="div1__frm__filtro">
                     <div className="btn1">Mensaje</div>
                     <div className="btn2">Telefono</div>
                   </div>
-                  <div className="div1_frm_card">
+                  <div className="div1__frm__card">
                     <h2>Contacta al Vendedor</h2>
                     <form action="">
                       <div className="inputs">
@@ -106,73 +107,73 @@ class DetAuto extends Component{
               <div className="descripcion">
                 <div className="descripcion__vehiculo">
                   <h2>Descripcion del Vehiculo</h2>
-                  <div className="descripcion_vehiculo_inputs">
-                    <textarea name="" id="" cols="30" rows="10">
+                  <div className="descripcion__vehiculo__inputs">
+                    <textarea name="" id="" cols="30" rows="10" readOnly>
                     {ofer.descripcion}
                     </textarea>
                   </div>
                 </div>
 
                 <div className="descripcion__carac">
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">{ofer.marca}</div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="Volkswagen" readOnly />
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">Marca</div>
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.marca} readOnly />
                     </div>
                   </div>
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">{ofer.modelo}</div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="PASSAT CC" readOnly />
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">Modelo</div>
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.modelo} readOnly />
                     </div>
                   </div>
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">
-                    {ofer.categoria}
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">
+                    Categoria
                     </div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="Sedan" readOnly />
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.categoria} readOnly />
                     </div>
                   </div>
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">
-                    {ofer.modelo}
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">
+                    Año-Modelo
                     </div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="2012" readOnly />
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.añomodelo} readOnly />
                     </div>
                   </div>
                 </div>
 
                 <div className="descripccion__carac">
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">
-                    {ofer.kilometraje}
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">
+                    Kilomentraje
                     </div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="80000" readOnly />
-                    </div>
-                  </div>
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">
-                    {ofer.transmision}
-                    </div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="Automatica" readOnly />
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.kilometraje} readOnly />
                     </div>
                   </div>
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">
-                    {ofer.combustible}
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">
+                     Transmision
                     </div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="Gasolina" readOnly />
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.transmision} readOnly />
                     </div>
                   </div>
-                  <div className="descripcion_carac_division">
-                    <div className="descripcion_caracdivision_titulo">{ofer.color}</div>
-                    <div className="descripcion_caracdivision_inputs">
-                      <input type="text" value="Negro" readOnly />
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">
+                    Combustible
+                    </div>
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.combustible} readOnly />
+                    </div>
+                  </div>
+                  <div className="descripcion__carac__division">
+                    <div className="descripcion__carac__division__titulo">Color</div>
+                    <div className="descripcion__carac__division__inputs">
+                      <input type="text" value={ofer.color} readOnly />
                     </div>
                   </div>
                 </div>

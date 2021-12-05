@@ -1,14 +1,26 @@
 import { createStore, combineReducers } from "redux";
-import { authReducer, carReducer } from "./";
+import { authReducer, carReducer, publishReducer } from "./";
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+
+const persistConfig = {
+  key: "root",
+  storage,
+}
 
 const allReducers = combineReducers({
   auth: authReducer,
   car: carReducer,
+  publsh: publishReducer,
 });
 
+const persistedReducer = persistReducer(persistConfig, allReducers);
+
 const store = createStore(
-  allReducers,
+  persistedReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-export { store };
+const persistor = persistStore(store);
+
+export { store, persistor };

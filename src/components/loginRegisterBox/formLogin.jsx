@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
+import swal from 'sweetalert';
 
 
 function FormLogin(){
@@ -15,15 +16,11 @@ function FormLogin(){
   const dispatch = useDispatch();
 
   const checkEmail = (serverUsers, formData) => {
-    console.log(serverUsers);
-    console.log(formData.email.value);
-    console.log(formData.password.value);
 
     const user = serverUsers
-      .find(user => user.email == formData.email.value && user.contraseña == formData.password.value)
-    // console.log(user);
+      .find(user => user.email === formData.email.value && user.contraseña === formData.password.value)
     if (user){
-      alert("Ingeso correcto!");
+      swal("Bienvenido", "contraseña correcta", "success");
       dispatch({
         type: 'SET_LOGIN',
         payload: true,
@@ -32,23 +29,20 @@ function FormLogin(){
         type: 'SET_USER',
         payload: user,
       });
-      // setTimeout(()=>{
         history.push('/');
-      // }, 1000);
     } else{
-      alert("Cuenta no existe");
+      swal("Error", "contraseña incorrecta", "error");
     }
   }
 
   let handleChange = (e) =>{
     const {name, value} = e.target;
     setFormValues({...formValues, [name]:value});
-    // console.log(formValues);
   }
 
   let handleSubmit = (e) =>{
     e.preventDefault();
-    const checkUser =
+    // const checkUser =
       axios
         .get(url)
         .then(

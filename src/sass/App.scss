@@ -9,6 +9,9 @@
 @import '../components/loginRegisterBox/formLogin';
 @import '../components/loginRegisterBox/formRegister';
 @import '../components/loginRegisterBox/rightRegister';
+@import '../components/carRegister/carRegister';
+@import '../components/carRegister/firstPublish';
+@import '../components/carRegister/userContact';
 
 // Pages
 @import '../pages/login/login';
@@ -16,6 +19,8 @@
 @import '../pages/usados/usados';
 
 @import '../pages/buscar-auto/buscar-auto';
+@import '../pages/publicar-auto/publicar-auto';
+@import '../pages/autos-publicados/autos-publicados';
 
 body{
     font-family: 'Raleway';

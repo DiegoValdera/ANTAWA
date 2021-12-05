@@ -49,7 +49,7 @@ export const Menu = styled.ul`
   list-style: none;
 
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1050px) {
     background-color: #23394d;
     position: absolute;
     top: 70px;
@@ -67,7 +67,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   height: 100%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1050px) {
     width: 100%;
     height: 70px;
     display: flex;
@@ -132,7 +132,7 @@ export const MenuItemLink = styled.a`
     }
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1050px) {
     width: 100%;
 
     div {
@@ -182,7 +182,7 @@ export const MenuItemLink = styled.a`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1050px) {
     display: flex;
     align-items: center;
     cursor: pointer;
