@@ -1284,6 +1284,82 @@ form {
   cursor: pointer;
 }
 
+.publishCar__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  gap: 30px;
+}
+
+.publishCar__data {
+  height: 200px;
+  width: 100%;
+  background: #E9C46A;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #264653;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 900px;
+}
+
+.publishCar__data h1 {
+  margin-left: 30px;
+  font-size: 24px;
+}
+
+.publishCar__data > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.publishCar__data > div > div h2:last-child {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.publishCar__data img {
+  height: 100px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.publishCar__data .publishCar__dataInput {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
 body {
   font-family: 'Raleway';
 }

@@ -20,7 +20,7 @@ function FormLogin(){
     const user = serverUsers
       .find(user => user.email === formData.email.value && user.contraseña === formData.password.value)
     if (user){
-      swal("Bienvenido", "contraseña correcta", "success");
+      swal("Bienvenido", "Contraseña correcta", "success");
       dispatch({
         type: 'SET_LOGIN',
         payload: true,
@@ -31,7 +31,7 @@ function FormLogin(){
       });
         history.push('/');
     } else{
-      swal("Error", "contraseña incorrecta", "error");
+      swal("Error", "Contraseña incorrecta", "error");
     }
   }
 
