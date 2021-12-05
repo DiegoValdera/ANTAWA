@@ -14,7 +14,7 @@ const CarsPublished = () => {
     <div className="main_buscar_auto">
       {/* <CardCarPublish/> */}
       <div className="publishCar__wrapper">
-        {dataCarsPublished.map((e)=>{
+        {Object.keys(dataCarsPublished).length == 0 ? '' : dataCarsPublished.map((e)=>{
           return(
           <div className="publishCar__data">
           <h1>Publicación</h1>
@@ -52,7 +52,7 @@ const CarsPublished = () => {
         </div>)
         })
 
-        }
+      }
       </div>
     </div>
   )

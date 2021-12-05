@@ -110,11 +110,11 @@ const CarRegister = () =>{
       })
       console.log(newDataForm);
       console.log(formErrors);
-      alert("Registro Exitoso");
       dispatch({
         type: "SET_PUBLISH_CARS",
         payload: newDataForm,
       });
+      alert("Registro Exitoso");
       history.push('/autos-publicados');
     }
   },[formErrors])
