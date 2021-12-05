@@ -817,28 +817,6 @@
         "https://http2.mlstatic.com/D_NQ_NP_2X_939307-MPE48404166538_122021-F.webp"
       ],
       "id": 15
-    },
-    {
-      "marca": "Toyota",
-      "modelo": "Land Cruiser Prado",
-      "categoria": "deportivo",
-      "añomfabricacion": "2000",
-      "añomodelo": "2000",
-      "kilometraje": "65000",
-      "transmision": "mecanica",
-      "combustible": "gasolina",
-      "cilindrada": "1300",
-      "numeropuertas": "4",
-      "color": "rojo",
-      "preciodolares": "1350000",
-      "region": "Junin",
-      "photos": [
-        "https://apollo-virginia.akamaized.net/v1/files/zr8cd6doe8o21-PE/image;s=780x0;q=60"
-      ],
-      "descripcion": "asdfasdfasdf",
-      "autonuevo": false,
-      "idVendedor": 4,
-      "id": 16
     }
   ]
 }

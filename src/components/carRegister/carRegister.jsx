@@ -110,14 +110,18 @@ const CarRegister = () =>{
       })
       console.log(newDataForm);
       console.log(formErrors);
-      dispatch({
-        type: "SET_PUBLISH_CARS",
-        payload: newDataForm,
-      });
-      alert("Registro Exitoso");
-      history.push('/autos-publicados');
+      addCarsData();
     }
   },[formErrors])
+
+  const addCarsData = () => {
+    dispatch({
+      type: "SET_PUBLISH_CARS",
+      payload: newDataForm,
+    });
+    alert("Registro Exitoso");
+    history.push('/autos-publicados');
+  }
 
   const validate = (values) => {
     const errors = {};
